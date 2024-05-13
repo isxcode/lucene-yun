@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.monitor.pojos.res;
+package com.isxcode.meta.api.monitor.pojos.res;
 
-import com.isxcode.acorn.api.monitor.pojos.dto.WorkflowInstanceLineDto;
+import com.isxcode.meta.api.monitor.pojos.dto.WorkflowInstanceLineDto;
 import lombok.Builder;
 import lombok.Data;
 

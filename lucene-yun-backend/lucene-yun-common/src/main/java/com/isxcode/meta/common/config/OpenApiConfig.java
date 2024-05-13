@@ -1,6 +1,6 @@
-package com.isxcode.acorn.common.config;
+package com.isxcode.meta.common.config;
 
-import com.isxcode.acorn.backend.api.base.constants.SecurityConstants;
+import com.isxcode.meta.backend.api.base.constants.SecurityConstants;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.servers.Server;

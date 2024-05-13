@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.workflow.repository;
+package com.isxcode.meta.modules.workflow.repository;
 
-import com.isxcode.acorn.modules.workflow.entity.WorkflowConfigEntity;
+import com.isxcode.meta.modules.workflow.entity.WorkflowConfigEntity;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

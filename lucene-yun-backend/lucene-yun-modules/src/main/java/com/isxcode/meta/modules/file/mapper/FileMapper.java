@@ -1,7 +1,7 @@
-package com.isxcode.acorn.modules.file.mapper;
+package com.isxcode.meta.modules.file.mapper;
 
-import com.isxcode.acorn.api.file.pojos.res.PageFileRes;
-import com.isxcode.acorn.modules.file.entity.FileEntity;
+import com.isxcode.meta.api.file.pojos.res.PageFileRes;
+import com.isxcode.meta.modules.file.entity.FileEntity;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

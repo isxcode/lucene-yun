@@ -1,7 +1,7 @@
-package com.isxcode.acorn.api.work.exceptions;
+package com.isxcode.meta.api.work.exceptions;
 
-import com.isxcode.acorn.backend.api.base.exceptions.AbstractIsxAppException;
-import com.isxcode.acorn.backend.api.base.exceptions.AbstractIsxAppExceptionEnum;
+import com.isxcode.meta.backend.api.base.exceptions.AbstractIsxAppException;
+import com.isxcode.meta.backend.api.base.exceptions.AbstractIsxAppExceptionEnum;
 
 public class WorkRunException extends AbstractIsxAppException {
 

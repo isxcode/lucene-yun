@@ -1,11 +1,11 @@
-package com.isxcode.acorn.security.main;
+package com.isxcode.meta.security.main;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
-import static com.isxcode.acorn.common.config.CommonConfig.USER_ID;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.USER_ID;
 
-import com.isxcode.acorn.backend.api.base.constants.SecurityConstants;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.utils.jwt.JwtUtils;
+import com.isxcode.meta.backend.api.base.constants.SecurityConstants;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.utils.jwt.JwtUtils;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.FilterChain;

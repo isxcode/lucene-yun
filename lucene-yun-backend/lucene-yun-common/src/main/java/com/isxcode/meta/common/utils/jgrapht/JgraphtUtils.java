@@ -1,6 +1,6 @@
-package com.isxcode.acorn.common.utils.jgrapht;
+package com.isxcode.meta.common.utils.jgrapht;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
 import org.jgrapht.Graph;
 import org.jgrapht.alg.cycle.CycleDetector;
 import org.jgrapht.graph.DefaultDirectedGraph;

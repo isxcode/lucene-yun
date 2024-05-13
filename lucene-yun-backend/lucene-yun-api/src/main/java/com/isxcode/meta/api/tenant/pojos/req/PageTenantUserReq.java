@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.tenant.pojos.req;
+package com.isxcode.meta.api.tenant.pojos.req;
 
-import com.isxcode.acorn.backend.api.base.pojos.BasePageRequest;
+import com.isxcode.meta.backend.api.base.pojos.BasePageRequest;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

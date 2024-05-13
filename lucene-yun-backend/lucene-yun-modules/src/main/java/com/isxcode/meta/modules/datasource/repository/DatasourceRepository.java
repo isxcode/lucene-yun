@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.datasource.repository;
+package com.isxcode.meta.modules.datasource.repository;
 
-import com.isxcode.acorn.modules.datasource.entity.DatasourceEntity;
+import com.isxcode.meta.modules.datasource.entity.DatasourceEntity;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

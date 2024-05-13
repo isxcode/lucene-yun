@@ -1,7 +1,7 @@
-package com.isxcode.acorn.common.utils;
+package com.isxcode.meta.common.utils;
 
 import cn.hutool.crypto.SecureUtil;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.agent.pojos.res;
+package com.isxcode.meta.api.agent.pojos.res;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.isxcode.acorn.api.datasource.pojos.req;
+package com.isxcode.meta.api.datasource.pojos.req;
 
-import com.isxcode.acorn.api.datasource.constants.DatasourceType;
-import com.isxcode.acorn.api.datasource.pojos.dto.KafkaConfig;
+import com.isxcode.meta.api.datasource.constants.DatasourceType;
+import com.isxcode.meta.api.datasource.pojos.dto.KafkaConfig;
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotEmpty;
 import lombok.Data;

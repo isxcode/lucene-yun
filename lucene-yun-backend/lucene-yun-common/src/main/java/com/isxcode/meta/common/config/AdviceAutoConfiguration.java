@@ -1,7 +1,7 @@
-package com.isxcode.acorn.common.config;
+package com.isxcode.meta.common.config;
 
-import com.isxcode.acorn.common.annotations.successResponse.SuccessResponseAdvice;
-import com.isxcode.acorn.common.exception.GlobalExceptionAdvice;
+import com.isxcode.meta.common.annotations.successResponse.SuccessResponseAdvice;
+import com.isxcode.meta.common.exception.GlobalExceptionAdvice;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSource;

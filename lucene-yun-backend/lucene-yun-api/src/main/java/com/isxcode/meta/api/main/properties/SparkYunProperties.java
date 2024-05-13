@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.main.properties;
+package com.isxcode.meta.api.main.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

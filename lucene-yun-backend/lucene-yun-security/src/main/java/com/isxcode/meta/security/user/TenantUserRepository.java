@@ -1,6 +1,6 @@
-package com.isxcode.acorn.security.user;
+package com.isxcode.meta.security.user;
 
-import com.isxcode.acorn.api.tenant.pojos.res.PageTenantUserRes;
+import com.isxcode.meta.api.tenant.pojos.res.PageTenantUserRes;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.cache.annotation.CacheConfig;
@@ -19,7 +19,7 @@ public interface TenantUserRepository extends JpaRepository<TenantUserEntity, St
 
     List<TenantUserEntity> findAllByUserId(String userId);
 
-    @Query(value = "select " + "   new com.isxcode.acorn.api.tenant.pojos.res.PageTenantUserRes(T.id , "
+    @Query(value = "select " + "   new com.isxcode.meta.api.tenant.pojos.res.PageTenantUserRes(T.id , "
         + "   U.account , " + "   U.username , " + "   U.phone , " + "   U.email , " + "   T.roleCode) "
         + "from TenantUserEntity T left join UserEntity U on T.userId = U.id  "
         + "WHERE U.roleCode != 'ROLE_SYS_ADMIN' " + "   and T.tenantId=:tenantId "

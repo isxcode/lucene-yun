@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.workflow.pojos.res;
+package com.isxcode.meta.api.workflow.pojos.res;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

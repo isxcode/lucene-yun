@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.userlog;
+package com.isxcode.meta.common.userlog;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -1,23 +1,23 @@
-package com.isxcode.acorn.modules.user.service;
+package com.isxcode.meta.modules.user.service;
 
-import static com.isxcode.acorn.common.config.CommonConfig.USER_ID;
+import static com.isxcode.meta.common.config.CommonConfig.USER_ID;
 
-import com.isxcode.acorn.api.user.constants.RoleType;
-import com.isxcode.acorn.api.user.constants.UserStatus;
-import com.isxcode.acorn.api.user.pojos.req.*;
-import com.isxcode.acorn.api.user.pojos.req.UpdateUserReq;
-import com.isxcode.acorn.api.user.pojos.res.*;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.utils.jwt.JwtUtils;
-import com.isxcode.acorn.common.utils.md5.Md5Utils;
-import com.isxcode.acorn.modules.tenant.entity.TenantEntity;
-import com.isxcode.acorn.modules.tenant.repository.TenantRepository;
-import com.isxcode.acorn.modules.user.mapper.UserMapper;
-import com.isxcode.acorn.security.user.TenantUserEntity;
-import com.isxcode.acorn.security.user.TenantUserRepository;
-import com.isxcode.acorn.security.user.UserEntity;
-import com.isxcode.acorn.security.user.UserRepository;
+import com.isxcode.meta.api.user.constants.RoleType;
+import com.isxcode.meta.api.user.constants.UserStatus;
+import com.isxcode.meta.api.user.pojos.req.*;
+import com.isxcode.meta.api.user.pojos.req.UpdateUserReq;
+import com.isxcode.meta.api.user.pojos.res.*;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.utils.jwt.JwtUtils;
+import com.isxcode.meta.common.utils.md5.Md5Utils;
+import com.isxcode.meta.modules.tenant.entity.TenantEntity;
+import com.isxcode.meta.modules.tenant.repository.TenantRepository;
+import com.isxcode.meta.modules.user.mapper.UserMapper;
+import com.isxcode.meta.security.user.TenantUserEntity;
+import com.isxcode.meta.security.user.TenantUserRepository;
+import com.isxcode.meta.security.user.UserEntity;
+import com.isxcode.meta.security.user.UserRepository;
 
 import java.util.List;
 import java.util.Optional;

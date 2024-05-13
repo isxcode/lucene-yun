@@ -1,4 +1,4 @@
-package com.isxcode.acorn.modules.tenant.mapper;
+package com.isxcode.meta.modules.tenant.mapper;
 
 import org.mapstruct.Mapper;
 

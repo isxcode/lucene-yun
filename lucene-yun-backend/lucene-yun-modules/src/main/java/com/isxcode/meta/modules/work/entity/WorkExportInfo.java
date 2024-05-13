@@ -1,4 +1,4 @@
-package com.isxcode.acorn.modules.work.entity;
+package com.isxcode.meta.modules.work.entity;
 
 import lombok.Builder;
 import lombok.Data;

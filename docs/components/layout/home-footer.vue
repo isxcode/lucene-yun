@@ -17,8 +17,8 @@
         <div class="column">
           <div class="title">产品</div>
           <div class="link" @click="clickZhiqingyun">至轻云</div>
-          <div class="link" @click="clickZhiliuyun">至数云</div>
-          <div class="link" @click="clickZhishiyun">至视云</div>
+          <div class="link" @click="clickzhishuyun">至数云</div>
+          <div class="link" @click="clickzhishuyun">至视云</div>
           <div class="link" @click="clickZhishuyun">至数云</div>
           <div class="link" @click="clickZhihuiyun">至慧云</div>
           <div class="link" @click="clickOther">更多</div>
@@ -345,7 +345,7 @@ $primary-color: #009b8f;
 <script setup lang="ts">
 import {ElMessage} from 'element-plus'
 
-function clickZhiliuyun() {
+function clickzhishuyun() {
   const router = useRouter();
   router.push("/");
 }
@@ -373,8 +373,8 @@ function clickZhishuyun() {
   window.open("https://zhishuyun.isxcode.com");
 }
 
-function clickZhishiyun() {
-  window.open("https://zhishiyun.isxcode.com");
+function clickzhishuyun() {
+  window.open("https://zhishuyun.isxcode.com");
 }
 
 function clickZhihuiyun() {
@@ -402,11 +402,11 @@ function clickDockerHub() {
 }
 
 function downloadLicense() {
-  window.open("https://isxcode.oss-cn-shanghai.aliyuncs.com/zhiliuyun/license.lic");
+  window.open("https://isxcode.oss-cn-shanghai.aliyuncs.com/zhishuyun/license.lic");
 }
 
 function downloadPackage() {
-  window.open("https://isxcode.oss-cn-shanghai.aliyuncs.com/zhiliuyun/zhiliuyun.tar.gz");
+  window.open("https://isxcode.oss-cn-shanghai.aliyuncs.com/zhishuyun/zhishuyun.tar.gz");
 }
 
 function clickFeishu() {

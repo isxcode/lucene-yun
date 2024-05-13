@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.user.constants;
+package com.isxcode.meta.api.user.constants;
 
 public interface UserStatus {
 

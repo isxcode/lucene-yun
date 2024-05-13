@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.form.pojos.res;
+package com.isxcode.meta.api.form.pojos.res;
 
-import com.isxcode.acorn.api.form.pojos.dto.FormComponentDto;
+import com.isxcode.meta.api.form.pojos.dto.FormComponentDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

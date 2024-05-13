@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.monitor.pojos.req;
+package com.isxcode.meta.api.monitor.pojos.req;
 
-import com.isxcode.acorn.backend.api.base.pojos.BasePageRequest;
+import com.isxcode.meta.backend.api.base.pojos.BasePageRequest;
 
 public class PageInstancesReq extends BasePageRequest {
 

@@ -1,8 +1,8 @@
-package com.isxcode.acorn.modules.work.service;
+package com.isxcode.meta.modules.work.service;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.work.entity.WorkEntity;
-import com.isxcode.acorn.modules.work.repository.WorkRepository;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.work.entity.WorkEntity;
+import com.isxcode.meta.modules.work.repository.WorkRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

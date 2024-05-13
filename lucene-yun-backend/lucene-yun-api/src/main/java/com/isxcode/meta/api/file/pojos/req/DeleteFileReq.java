@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.file.pojos.req;
+package com.isxcode.meta.api.file.pojos.req;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

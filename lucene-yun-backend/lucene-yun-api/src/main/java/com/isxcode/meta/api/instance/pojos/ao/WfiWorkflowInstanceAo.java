@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.instance.pojos.ao;
+package com.isxcode.meta.api.instance.pojos.ao;
 
 import java.util.Date;
 import lombok.Data;

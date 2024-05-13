@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.api.constants;
+package com.isxcode.meta.api.api.constants;
 
 /**
  * 各个默认指定路径.
@@ -23,5 +23,5 @@ public interface PathConstants {
     /**
      * 代理文件命令.
      */
-    String AGENT_PATH_NAME = "zhiliuyun-agent";
+    String AGENT_PATH_NAME = "zhishuyun-agent";
 }

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.datasource.pojos.dto;
+package com.isxcode.meta.api.datasource.pojos.dto;
 
 import lombok.Builder;
 import lombok.Data;

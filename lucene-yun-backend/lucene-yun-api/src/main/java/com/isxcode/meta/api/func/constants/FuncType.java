@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.func.constants;
+package com.isxcode.meta.api.func.constants;
 
 public interface FuncType {
 

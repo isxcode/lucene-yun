@@ -1,10 +1,10 @@
-package com.isxcode.acorn.modules.work.run;
+package com.isxcode.meta.modules.work.run;
 
-import com.isxcode.acorn.api.work.pojos.dto.ApiWorkConfig;
-import com.isxcode.acorn.api.work.pojos.dto.ClusterConfig;
-import com.isxcode.acorn.api.work.pojos.dto.JarJobConfig;
-import com.isxcode.acorn.api.work.pojos.dto.SyncRule;
-import com.isxcode.acorn.api.work.pojos.dto.SyncWorkConfig;
+import com.isxcode.meta.api.work.pojos.dto.ApiWorkConfig;
+import com.isxcode.meta.api.work.pojos.dto.ClusterConfig;
+import com.isxcode.meta.api.work.pojos.dto.JarJobConfig;
+import com.isxcode.meta.api.work.pojos.dto.SyncRule;
+import com.isxcode.meta.api.work.pojos.dto.SyncWorkConfig;
 import lombok.Builder;
 import lombok.Data;
 

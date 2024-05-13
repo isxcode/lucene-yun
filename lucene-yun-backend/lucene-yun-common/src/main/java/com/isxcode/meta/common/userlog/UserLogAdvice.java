@@ -1,12 +1,12 @@
-package com.isxcode.acorn.common.userlog;
+package com.isxcode.meta.common.userlog;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
-import static com.isxcode.acorn.common.config.CommonConfig.USER_ID;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.USER_ID;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.isxcode.acorn.backend.api.base.exceptions.SuccessResponseException;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.backend.api.base.exceptions.SuccessResponseException;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
 import java.util.Enumeration;
 import javax.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
@@ -34,7 +34,7 @@ public class UserLogAdvice {
 
     private final IsxAppProperties isxAppProperties;
 
-    @Pointcut("@annotation(com.isxcode.acorn.common.userlog.UserLog)")
+    @Pointcut("@annotation(com.isxcode.meta.common.userlog.UserLog)")
     public void operateUserLog() {}
 
     @Before(value = "operateUserLog()")

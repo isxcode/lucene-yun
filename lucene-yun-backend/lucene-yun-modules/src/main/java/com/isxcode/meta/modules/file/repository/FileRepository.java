@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.file.repository;
+package com.isxcode.meta.modules.file.repository;
 
-import com.isxcode.acorn.modules.file.entity.FileEntity;
+import com.isxcode.meta.modules.file.entity.FileEntity;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

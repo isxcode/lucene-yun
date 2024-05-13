@@ -1,8 +1,8 @@
-package com.isxcode.acorn.api.agent.pojos.res;
+package com.isxcode.meta.api.agent.pojos.res;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
-import com.isxcode.acorn.api.agent.pojos.dto.FlinkTimestampsDto;
-import com.isxcode.acorn.api.agent.pojos.dto.FlinkVerticesDto;
+import com.isxcode.meta.api.agent.pojos.dto.FlinkTimestampsDto;
+import com.isxcode.meta.api.agent.pojos.dto.FlinkVerticesDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

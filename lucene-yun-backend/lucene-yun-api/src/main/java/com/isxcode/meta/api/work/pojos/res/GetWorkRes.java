@@ -1,7 +1,7 @@
-package com.isxcode.acorn.api.work.pojos.res;
+package com.isxcode.meta.api.work.pojos.res;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.isxcode.acorn.api.work.pojos.dto.*;
+import com.isxcode.meta.api.work.pojos.dto.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

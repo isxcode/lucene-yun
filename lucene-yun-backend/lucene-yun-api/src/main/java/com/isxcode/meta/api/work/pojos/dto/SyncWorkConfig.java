@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.work.pojos.dto;
+package com.isxcode.meta.api.work.pojos.dto;
 
-import com.isxcode.acorn.api.datasource.pojos.dto.KafkaConfig;
+import com.isxcode.meta.api.datasource.pojos.dto.KafkaConfig;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

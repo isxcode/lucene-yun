@@ -1,4 +1,4 @@
-package com.isxcode.acorn.modules.tenant.entity;
+package com.isxcode.meta.modules.tenant.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDateTime;
@@ -30,7 +30,7 @@ public class TenantEntity {
 
     @Id
     @GeneratedValue(generator = "sy-id-generator")
-    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.acorn.config.GeneratedValueConfig")
+    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.meta.config.GeneratedValueConfig")
     private String id;
 
     private String name;

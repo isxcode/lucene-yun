@@ -1,12 +1,12 @@
-package com.isxcode.acorn.modules.file.controller;
+package com.isxcode.meta.modules.file.controller;
 
-import com.isxcode.acorn.api.file.pojos.req.DeleteFileReq;
-import com.isxcode.acorn.api.file.pojos.req.DownloadFileReq;
-import com.isxcode.acorn.api.file.pojos.req.PageFileReq;
-import com.isxcode.acorn.api.file.pojos.res.PageFileRes;
-import com.isxcode.acorn.api.main.constants.ModuleCode;
-import com.isxcode.acorn.common.annotations.successResponse.SuccessResponse;
-import com.isxcode.acorn.modules.file.service.FileBizService;
+import com.isxcode.meta.api.file.pojos.req.DeleteFileReq;
+import com.isxcode.meta.api.file.pojos.req.DownloadFileReq;
+import com.isxcode.meta.api.file.pojos.req.PageFileReq;
+import com.isxcode.meta.api.file.pojos.res.PageFileRes;
+import com.isxcode.meta.api.main.constants.ModuleCode;
+import com.isxcode.meta.common.annotations.successResponse.SuccessResponse;
+import com.isxcode.meta.modules.file.service.FileBizService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;

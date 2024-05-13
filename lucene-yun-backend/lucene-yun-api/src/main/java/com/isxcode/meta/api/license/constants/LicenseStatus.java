@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.license.constants;
+package com.isxcode.meta.api.license.constants;
 
 public interface LicenseStatus {
 

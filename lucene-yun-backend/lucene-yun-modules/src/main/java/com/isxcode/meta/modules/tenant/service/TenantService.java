@@ -1,8 +1,8 @@
-package com.isxcode.acorn.modules.tenant.service;
+package com.isxcode.meta.modules.tenant.service;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.tenant.entity.TenantEntity;
-import com.isxcode.acorn.modules.tenant.repository.TenantRepository;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.tenant.entity.TenantEntity;
+import com.isxcode.meta.modules.tenant.repository.TenantRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

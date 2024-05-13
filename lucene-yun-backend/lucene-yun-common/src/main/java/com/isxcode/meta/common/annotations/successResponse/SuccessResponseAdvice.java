@@ -1,7 +1,7 @@
-package com.isxcode.acorn.common.annotations.successResponse;
+package com.isxcode.meta.common.annotations.successResponse;
 
-import com.isxcode.acorn.backend.api.base.exceptions.SuccessResponseException;
-import com.isxcode.acorn.backend.api.base.pojos.BaseResponse;
+import com.isxcode.meta.backend.api.base.exceptions.SuccessResponseException;
+import com.isxcode.meta.backend.api.base.pojos.BaseResponse;
 
 import java.io.InputStream;
 
@@ -24,7 +24,7 @@ public class SuccessResponseAdvice {
 
     private final MessageSource messageSource;
 
-    @Pointcut("@annotation(com.isxcode.acorn.common.annotations.successResponse.SuccessResponse)")
+    @Pointcut("@annotation(com.isxcode.meta.common.annotations.successResponse.SuccessResponse)")
     public void operateLog() {}
 
     @AfterReturning(returning = "data", value = "operateLog()&&@annotation(successResponse)")

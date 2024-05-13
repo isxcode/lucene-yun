@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.workflow.pojos.dto;
+package com.isxcode.meta.api.workflow.pojos.dto;
 
 import lombok.Data;
 

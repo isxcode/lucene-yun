@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.annotations.successResponse;
+package com.isxcode.meta.common.annotations.successResponse;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

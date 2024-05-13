@@ -1,7 +1,7 @@
-package com.isxcode.acorn.api.work.pojos.res;
+package com.isxcode.meta.api.work.pojos.res;
 
-import com.isxcode.acorn.api.work.pojos.dto.SyncColumnInfo;
-import com.isxcode.acorn.api.work.pojos.dto.SyncColumnMap;
+import com.isxcode.meta.api.work.pojos.dto.SyncColumnInfo;
+import com.isxcode.meta.api.work.pojos.dto.SyncColumnMap;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

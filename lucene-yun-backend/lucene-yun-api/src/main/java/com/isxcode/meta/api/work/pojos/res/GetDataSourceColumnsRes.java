@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.work.pojos.res;
+package com.isxcode.meta.api.work.pojos.res;
 
-import com.isxcode.acorn.api.datasource.pojos.dto.ColumnMetaDto;
+import com.isxcode.meta.api.datasource.pojos.dto.ColumnMetaDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.work.pojos.res;
+package com.isxcode.meta.api.work.pojos.res;
 
 import lombok.Builder;
 import lombok.Data;

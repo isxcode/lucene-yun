@@ -1,43 +1,43 @@
-package com.isxcode.acorn.modules.work.run;
+package com.isxcode.meta.modules.work.run;
 
 import com.alibaba.fastjson.JSON;
-import com.isxcode.acorn.api.agent.constants.AgentApi;
-import com.isxcode.acorn.api.agent.pojos.req.GetJobInfoReq;
-import com.isxcode.acorn.api.agent.pojos.req.GetJobLogReq;
-import com.isxcode.acorn.api.agent.pojos.req.SubmitJobReq;
-import com.isxcode.acorn.api.agent.pojos.res.GetJobInfoRes;
-import com.isxcode.acorn.api.agent.pojos.res.GetJobLogRes;
-import com.isxcode.acorn.api.agent.pojos.res.SubmitJobRes;
-import com.isxcode.acorn.api.cluster.constants.ClusterNodeStatus;
-import com.isxcode.acorn.api.cluster.pojos.dto.ScpFileEngineNodeDto;
-import com.isxcode.acorn.api.work.constants.WorkLog;
-import com.isxcode.acorn.api.work.constants.WorkType;
-import com.isxcode.acorn.api.work.exceptions.WorkRunException;
-import com.isxcode.acorn.api.work.pojos.dto.JarJobConfig;
-import com.isxcode.acorn.api.work.pojos.res.RunWorkRes;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.backend.api.base.pojos.BaseResponse;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.locker.Locker;
-import com.isxcode.acorn.common.utils.AesUtils;
-import com.isxcode.acorn.common.utils.http.HttpUrlUtils;
-import com.isxcode.acorn.common.utils.http.HttpUtils;
-import com.isxcode.acorn.common.utils.path.PathUtils;
-import com.isxcode.acorn.modules.cluster.entity.ClusterEntity;
-import com.isxcode.acorn.modules.cluster.entity.ClusterNodeEntity;
-import com.isxcode.acorn.modules.cluster.mapper.ClusterNodeMapper;
-import com.isxcode.acorn.modules.cluster.repository.ClusterNodeRepository;
-import com.isxcode.acorn.modules.cluster.repository.ClusterRepository;
-import com.isxcode.acorn.modules.file.entity.FileEntity;
-import com.isxcode.acorn.modules.file.repository.FileRepository;
-import com.isxcode.acorn.modules.file.service.FileService;
-import com.isxcode.acorn.modules.work.entity.WorkConfigEntity;
-import com.isxcode.acorn.modules.work.entity.WorkEntity;
-import com.isxcode.acorn.modules.work.entity.WorkInstanceEntity;
-import com.isxcode.acorn.modules.work.repository.WorkConfigRepository;
-import com.isxcode.acorn.modules.work.repository.WorkInstanceRepository;
-import com.isxcode.acorn.modules.work.repository.WorkRepository;
-import com.isxcode.acorn.modules.workflow.repository.WorkflowInstanceRepository;
+import com.isxcode.meta.api.agent.constants.AgentApi;
+import com.isxcode.meta.api.agent.pojos.req.GetJobInfoReq;
+import com.isxcode.meta.api.agent.pojos.req.GetJobLogReq;
+import com.isxcode.meta.api.agent.pojos.req.SubmitJobReq;
+import com.isxcode.meta.api.agent.pojos.res.GetJobInfoRes;
+import com.isxcode.meta.api.agent.pojos.res.GetJobLogRes;
+import com.isxcode.meta.api.agent.pojos.res.SubmitJobRes;
+import com.isxcode.meta.api.cluster.constants.ClusterNodeStatus;
+import com.isxcode.meta.api.cluster.pojos.dto.ScpFileEngineNodeDto;
+import com.isxcode.meta.api.work.constants.WorkLog;
+import com.isxcode.meta.api.work.constants.WorkType;
+import com.isxcode.meta.api.work.exceptions.WorkRunException;
+import com.isxcode.meta.api.work.pojos.dto.JarJobConfig;
+import com.isxcode.meta.api.work.pojos.res.RunWorkRes;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.pojos.BaseResponse;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.locker.Locker;
+import com.isxcode.meta.common.utils.AesUtils;
+import com.isxcode.meta.common.utils.http.HttpUrlUtils;
+import com.isxcode.meta.common.utils.http.HttpUtils;
+import com.isxcode.meta.common.utils.path.PathUtils;
+import com.isxcode.meta.modules.cluster.entity.ClusterEntity;
+import com.isxcode.meta.modules.cluster.entity.ClusterNodeEntity;
+import com.isxcode.meta.modules.cluster.mapper.ClusterNodeMapper;
+import com.isxcode.meta.modules.cluster.repository.ClusterNodeRepository;
+import com.isxcode.meta.modules.cluster.repository.ClusterRepository;
+import com.isxcode.meta.modules.file.entity.FileEntity;
+import com.isxcode.meta.modules.file.repository.FileRepository;
+import com.isxcode.meta.modules.file.service.FileService;
+import com.isxcode.meta.modules.work.entity.WorkConfigEntity;
+import com.isxcode.meta.modules.work.entity.WorkEntity;
+import com.isxcode.meta.modules.work.entity.WorkInstanceEntity;
+import com.isxcode.meta.modules.work.repository.WorkConfigRepository;
+import com.isxcode.meta.modules.work.repository.WorkInstanceRepository;
+import com.isxcode.meta.modules.work.repository.WorkRepository;
+import com.isxcode.meta.modules.workflow.repository.WorkflowInstanceRepository;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.SftpException;
 import lombok.extern.slf4j.Slf4j;
@@ -53,8 +53,8 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.*;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
-import static com.isxcode.acorn.common.utils.ssh.SshUtils.scpJar;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.utils.ssh.SshUtils.scpJar;
 
 
 @Service
@@ -162,7 +162,7 @@ public class FlinkJarExecutor extends WorkExecutor {
             + File.separator + TENANT_ID.get();
         try {
             scpJar(scpFileEngineNodeDto, fileDir + File.separator + jarFile.getId(),
-                engineNode.getAgentHomePath() + File.separator + "zhiliuyun-agent" + File.separator + "file"
+                engineNode.getAgentHomePath() + File.separator + "zhishuyun-agent" + File.separator + "file"
                     + File.separator + jarFile.getId() + ".jar");
         } catch (JSchException | SftpException | InterruptedException | IOException e) {
             log.debug(e.getMessage());
@@ -175,7 +175,7 @@ public class FlinkJarExecutor extends WorkExecutor {
             libFile.forEach(e -> {
                 try {
                     scpJar(scpFileEngineNodeDto, fileDir + File.separator + e.getId(),
-                        engineNode.getAgentHomePath() + File.separator + "zhiliuyun-agent" + File.separator + "file"
+                        engineNode.getAgentHomePath() + File.separator + "zhishuyun-agent" + File.separator + "file"
                             + File.separator + e.getId() + ".jar");
                 } catch (JSchException | SftpException | InterruptedException | IOException ex) {
                     throw new WorkRunException(LocalDateTime.now() + WorkLog.ERROR_INFO + "jar文件上传失败\n");

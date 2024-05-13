@@ -1,7 +1,7 @@
-package com.isxcode.acorn.backend.api.base.pojos;
+package com.isxcode.meta.backend.api.base.pojos;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.isxcode.acorn.backend.api.base.exceptions.AbstractIsxAppExceptionEnum;
+import com.isxcode.meta.backend.api.base.exceptions.AbstractIsxAppExceptionEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
