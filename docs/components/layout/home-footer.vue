@@ -16,7 +16,7 @@
       <div class="right">
         <div class="column">
           <div class="title">产品</div>
-          <div class="link" @click="clickZhiqingyun">至轻云</div>
+          <div class="link" @click="clickZhiqingyun">至数云</div>
           <div class="link" @click="clickZhiliuyun">至流云</div>
           <div class="link" @click="clickZhishiyun">至视云</div>
           <div class="link" @click="clickZhishuyun">至数云</div>
@@ -357,7 +357,7 @@ function clickGithubProject() {
 }
 
 function clickGitee() {
-  window.open("https://gitee.com/isxcode/spark-yun");
+  window.open("https://gitee.com/isxcode/lucene-yun");
 }
 
 function clickZhiliuyun() {
@@ -381,7 +381,7 @@ function clickZhihuiyun() {
 }
 
 function clickGithub() {
-  window.open("https://github.com/isxcode/spark-yun/discussions");
+  window.open("https://github.com/isxcode/lucene-yun/discussions");
 }
 
 function clickSlack() {
