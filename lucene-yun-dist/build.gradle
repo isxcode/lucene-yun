@@ -25,10 +25,7 @@ tasks.register('build_agent_lib', Copy) {
 // 构建plugins文件夹
 tasks.register('build_agent_plugins', Copy) {
 
-  dependsOn(':lucene-yun-plugins:flink-sql-execute-plugin:jar')
 
-  from rootDir.getAbsolutePath() + '/lucene-yun-plugins/flink-sql-execute-plugin/build/libs'
-  into 'build/zhiliuyun-agent/plugins'
 }
 
 // 构建至轻云代理
