@@ -17,8 +17,8 @@
         <div class="column">
           <div class="title">产品</div>
           <div class="link" @click="clickZhiqingyun">至轻云</div>
-          <div class="link" @click="clickzhishuyun">至数云</div>
-          <div class="link" @click="clickzhishuyun">至视云</div>
+          <div class="link" @click="clickZhiliuyun">至流云</div>
+          <div class="link" @click="clickZhishiyun">至视云</div>
           <div class="link" @click="clickZhishuyun">至数云</div>
           <div class="link" @click="clickZhihuiyun">至慧云</div>
           <div class="link" @click="clickOther">更多</div>
@@ -345,11 +345,6 @@ $primary-color: #009b8f;
 <script setup lang="ts">
 import {ElMessage} from 'element-plus'
 
-function clickzhishuyun() {
-  const router = useRouter();
-  router.push("/");
-}
-
 function clickOther() {
   ElMessage({
     message: '敬请期待',
@@ -365,6 +360,10 @@ function clickGitee() {
   window.open("https://gitee.com/isxcode/spark-yun");
 }
 
+function clickZhiliuyun() {
+  window.open("https://zhiliuyun.isxcode.com");
+}
+
 function clickZhiqingyun() {
   window.open("https://zhiqingyun.isxcode.com");
 }
@@ -373,8 +372,8 @@ function clickZhishuyun() {
   window.open("https://zhishuyun.isxcode.com");
 }
 
-function clickzhishuyun() {
-  window.open("https://zhishuyun.isxcode.com");
+function clickZhishiyun() {
+  window.open("https://zhishiyun.isxcode.com");
 }
 
 function clickZhihuiyun() {
