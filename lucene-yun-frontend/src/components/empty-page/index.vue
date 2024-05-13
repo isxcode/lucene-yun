@@ -4,7 +4,7 @@
  * @LastEditTime: 2023-06-04 22:32:31
  * @LastEditors: fanciNate
  * @Description: In User Settings Edit
- * @FilePath: /spark-yun/spark-yun-website/src/components/empty-page/index.vue
+ * @FilePath: /lucene-yun/lucene-yun-website/src/components/empty-page/index.vue
 -->
 <template>
   <div class="empty-page">

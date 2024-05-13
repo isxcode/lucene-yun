@@ -17,7 +17,7 @@ L::::::::::::::::::::::L u:::::::::::::::u c:::::::::::::::::c e::::::::eeeeeeee
 L::::::::::::::::::::::L  uu::::::::uu:::u  cc:::::::::::::::c  ee:::::::::::::e    n::::n    n::::n  ee:::::::::::::e           Y:::::::::::Y      uu::::::::uu:::un::::n    n::::n
 LLLLLLLLLLLLLLLLLLLLLLLL    uuuuuuuu  uuuu    cccccccccccccccc    eeeeeeeeeeeeee    nnnnnn    nnnnnn    eeeeeeeeeeeeee           YYYYYYYYYYYYY        uuuuuuuu  uuuunnnnnn    nnnnnn
 
-${AnsiColor.BRIGHT_MAGENTA}
+${AnsiColor.BLUE}
 项目: ${application.title}
 官网: ${application.website}
 描述: ${application.describe}
