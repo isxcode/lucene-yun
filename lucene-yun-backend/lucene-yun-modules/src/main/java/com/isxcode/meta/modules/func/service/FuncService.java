@@ -1,8 +1,8 @@
-package com.isxcode.acorn.modules.func.service;
+package com.isxcode.meta.modules.func.service;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.func.entity.FuncEntity;
-import com.isxcode.acorn.modules.func.repository.FuncRepository;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.func.entity.FuncEntity;
+import com.isxcode.meta.modules.func.repository.FuncRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

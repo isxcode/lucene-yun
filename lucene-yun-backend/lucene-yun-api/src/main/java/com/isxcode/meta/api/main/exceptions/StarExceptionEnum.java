@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.main.exceptions;
+package com.isxcode.meta.api.main.exceptions;
 
-import com.isxcode.acorn.backend.api.base.exceptions.AbstractIsxAppExceptionEnum;
+import com.isxcode.meta.backend.api.base.exceptions.AbstractIsxAppExceptionEnum;
 import lombok.Getter;
 
 public enum StarExceptionEnum implements AbstractIsxAppExceptionEnum {

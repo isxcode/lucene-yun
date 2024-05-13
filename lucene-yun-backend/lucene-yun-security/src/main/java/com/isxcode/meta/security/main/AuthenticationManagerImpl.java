@@ -1,4 +1,4 @@
-package com.isxcode.acorn.security.main;
+package com.isxcode.meta.security.main;
 
 import java.util.List;
 import org.springframework.security.authentication.AuthenticationManager;

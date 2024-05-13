@@ -1,8 +1,8 @@
-package com.isxcode.acorn.security.main;
+package com.isxcode.meta.security.main;
 
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.security.user.TenantUserRepository;
-import com.isxcode.acorn.security.user.UserRepository;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.security.user.TenantUserRepository;
+import com.isxcode.meta.security.user.UserRepository;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

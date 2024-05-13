@@ -1,9 +1,9 @@
-package com.isxcode.acorn.modules.work.mapper;
+package com.isxcode.meta.modules.work.mapper;
 
-import com.isxcode.acorn.api.work.pojos.req.AddWorkReq;
-import com.isxcode.acorn.api.work.pojos.req.UpdateWorkReq;
-import com.isxcode.acorn.api.work.pojos.res.PageWorkRes;
-import com.isxcode.acorn.modules.work.entity.WorkEntity;
+import com.isxcode.meta.api.work.pojos.req.AddWorkReq;
+import com.isxcode.meta.api.work.pojos.req.UpdateWorkReq;
+import com.isxcode.meta.api.work.pojos.res.PageWorkRes;
+import com.isxcode.meta.modules.work.entity.WorkEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.form.pojos.req;
+package com.isxcode.meta.api.form.pojos.req;
 
-import com.isxcode.acorn.api.form.pojos.dto.FormComponentDto;
+import com.isxcode.meta.api.form.pojos.dto.FormComponentDto;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

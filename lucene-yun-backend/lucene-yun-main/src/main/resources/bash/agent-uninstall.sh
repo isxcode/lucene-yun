@@ -36,11 +36,11 @@ for arg in "$@"; do
 done
 
 # 初始化agent_path
-agent_path="${home_path}/zhiliuyun-agent"
+agent_path="${home_path}/zhishuyun-agent"
 
 # 如果进程存在,杀死进程
-if [ -e "${agent_path}/zhiliuyun-agent.pid" ]; then
-  pid=$(cat "${agent_path}/zhiliuyun-agent.pid")
+if [ -e "${agent_path}/zhishuyun-agent.pid" ]; then
+  pid=$(cat "${agent_path}/zhishuyun-agent.pid")
   if ps -p $pid >/dev/null 2>&1; then
     kill -9 ${pid}
   fi

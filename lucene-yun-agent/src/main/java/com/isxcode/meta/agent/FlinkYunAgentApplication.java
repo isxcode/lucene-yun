@@ -1,4 +1,4 @@
-package com.isxcode.acorn.agent;
+package com.isxcode.meta.agent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

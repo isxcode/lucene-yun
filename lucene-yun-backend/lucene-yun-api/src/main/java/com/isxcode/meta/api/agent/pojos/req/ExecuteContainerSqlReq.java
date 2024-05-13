@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.agent.pojos.req;
+package com.isxcode.meta.api.agent.pojos.req;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

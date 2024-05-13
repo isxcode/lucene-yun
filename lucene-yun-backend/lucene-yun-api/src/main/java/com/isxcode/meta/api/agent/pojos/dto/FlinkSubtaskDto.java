@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.agent.pojos.dto;
+package com.isxcode.meta.api.agent.pojos.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import lombok.Data;

@@ -12,14 +12,14 @@ tasks.register('build_agent_lib', Copy) {
   }
   dependencies.each { dependency ->
     from dependency
-    into 'build/zhiliuyun_agent/lib'
+    into 'build/zhishuyun_agent/lib'
   }
 
   from rootDir.getAbsolutePath() + '/lucene-yun-backend/lucene-yun-api/build/libs'
   from rootDir.getAbsolutePath() + '/lucene-yun-agent/build/libs'
   from rootDir.getAbsolutePath() + '/resources/jdbc/system'
   from rootDir.getAbsolutePath() + '/resources/cdc'
-  into 'build/zhiliuyun-agent/lib'
+  into 'build/zhishuyun-agent/lib'
 }
 
 // 构建plugins文件夹
@@ -37,69 +37,69 @@ tasks.register('build_agent', Tar) {
   dependsOn('build_agent_plugins')
 
   compression = Compression.GZIP
-  archiveFileName = 'zhiliuyun-agent.tar.gz'
+  archiveFileName = 'zhishuyun-agent.tar.gz'
 
   from(rootDir.getAbsolutePath() + "/lucene-yun-dist/flink-min") {
-    into 'zhiliuyun-agent/flink-min'
+    into 'zhishuyun-agent/flink-min'
   }
-  from('zhiliuyun-agent/bin') {
-    into 'zhiliuyun-agent/bin'
+  from('zhishuyun-agent/bin') {
+    into 'zhishuyun-agent/bin'
   }
   from(rootDir.getAbsolutePath() + "/lucene-yun-agent/src/main/resources/application.yml") {
-    into 'zhiliuyun-agent/conf'
+    into 'zhishuyun-agent/conf'
   }
-  from('zhiliuyun-agent/logs') {
-    into 'zhiliuyun-agent/logs'
+  from('zhishuyun-agent/logs') {
+    into 'zhishuyun-agent/logs'
   }
-  from('build/zhiliuyun-agent/plugins') {
-    into 'zhiliuyun-agent/plugins'
+  from('build/zhishuyun-agent/plugins') {
+    into 'zhishuyun-agent/plugins'
   }
-  from('zhiliuyun-agent/works') {
-    into 'zhiliuyun-agent/works'
+  from('zhishuyun-agent/works') {
+    into 'zhishuyun-agent/works'
   }
-  from('zhiliuyun-agent/file') {
-    into 'zhiliuyun-agent/file'
+  from('zhishuyun-agent/file') {
+    into 'zhishuyun-agent/file'
   }
-  from('build/zhiliuyun-agent/lib') {
-    into 'zhiliuyun-agent/lib'
+  from('build/zhishuyun-agent/lib') {
+    into 'zhishuyun-agent/lib'
   }
   from('../README.md') {
-    into 'zhiliuyun-agent/'
+    into 'zhishuyun-agent/'
   }
 }
 
 // 构建至轻云
-tasks.register('build_zhiliuyun', Tar) {
+tasks.register('build_zhishuyun', Tar) {
 
   mustRunAfter(":lucene-yun-backend:make")
 
   compression = Compression.GZIP
-  archiveFileName = 'zhiliuyun.tar.gz'
+  archiveFileName = 'zhishuyun.tar.gz'
 
-  from('zhiliuyun/bin') {
-    into 'zhiliuyun/bin'
+  from('zhishuyun/bin') {
+    into 'zhishuyun/bin'
   }
-  from('zhiliuyun/conf') {
-    into 'zhiliuyun/conf'
+  from('zhishuyun/conf') {
+    into 'zhishuyun/conf'
   }
   from(rootDir.getAbsolutePath() + '/lucene-yun-backend/lucene-yun-main/src/main/resources/application-local.yml') {
-    into 'zhiliuyun/conf'
+    into 'zhishuyun/conf'
   }
   from(rootDir.getAbsolutePath() + '/resources/jdbc/system') {
-    into 'zhiliuyun/resources/jdbc/system'
+    into 'zhishuyun/resources/jdbc/system'
   }
-  from(rootDir.getAbsolutePath() + '/lucene-yun-backend/lucene-yun-main/build/libs/zhiliuyun.jar') {
-    into 'zhiliuyun/lib'
+  from(rootDir.getAbsolutePath() + '/lucene-yun-backend/lucene-yun-main/build/libs/zhishuyun.jar') {
+    into 'zhishuyun/lib'
   }
   from(rootDir.getAbsolutePath() + '/README.md') {
-    into 'zhiliuyun/'
+    into 'zhishuyun/'
   }
 }
 
 // 打包
 tasks.register('make', GradleBuild) {
 
-  tasks = [":lucene-yun-frontend:make", "build_agent", ":lucene-yun-backend:make", "build_zhiliuyun"]
+  tasks = [":lucene-yun-frontend:make", "build_agent", ":lucene-yun-backend:make", "build_zhishuyun"]
 }
 
 // 添加依赖

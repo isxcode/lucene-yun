@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.real.constants;
+package com.isxcode.meta.api.real.constants;
 
 public interface JsonDataType {
 

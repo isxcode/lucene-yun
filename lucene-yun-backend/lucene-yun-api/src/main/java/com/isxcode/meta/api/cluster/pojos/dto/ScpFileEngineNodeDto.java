@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.cluster.pojos.dto;
+package com.isxcode.meta.api.cluster.pojos.dto;
 
 import lombok.Data;
 

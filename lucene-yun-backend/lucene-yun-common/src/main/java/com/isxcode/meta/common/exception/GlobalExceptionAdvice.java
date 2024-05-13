@@ -1,9 +1,9 @@
-package com.isxcode.acorn.common.exception;
+package com.isxcode.meta.common.exception;
 
-import com.isxcode.acorn.backend.api.base.exceptions.AbstractIsxAppException;
-import com.isxcode.acorn.backend.api.base.exceptions.AgentResponseException;
-import com.isxcode.acorn.backend.api.base.exceptions.SuccessResponseException;
-import com.isxcode.acorn.backend.api.base.pojos.BaseResponse;
+import com.isxcode.meta.backend.api.base.exceptions.AbstractIsxAppException;
+import com.isxcode.meta.backend.api.base.exceptions.AgentResponseException;
+import com.isxcode.meta.backend.api.base.exceptions.SuccessResponseException;
+import com.isxcode.meta.backend.api.base.pojos.BaseResponse;
 import java.nio.file.AccessDeniedException;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;

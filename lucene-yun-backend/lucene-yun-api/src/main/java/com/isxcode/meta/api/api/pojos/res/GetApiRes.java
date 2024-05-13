@@ -1,7 +1,7 @@
-package com.isxcode.acorn.api.api.pojos.res;
+package com.isxcode.meta.api.api.pojos.res;
 
-import com.isxcode.acorn.api.api.pojos.dto.GetReqParamDto;
-import com.isxcode.acorn.api.api.pojos.dto.HeaderTokenDto;
+import com.isxcode.meta.api.api.pojos.dto.GetReqParamDto;
+import com.isxcode.meta.api.api.pojos.dto.HeaderTokenDto;
 import lombok.Data;
 
 import java.util.List;

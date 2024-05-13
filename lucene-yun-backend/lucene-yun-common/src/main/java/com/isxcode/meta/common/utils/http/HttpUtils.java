@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.utils.http;
+package com.isxcode.meta.common.utils.http;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

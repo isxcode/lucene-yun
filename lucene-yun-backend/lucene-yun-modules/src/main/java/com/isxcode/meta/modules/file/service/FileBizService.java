@@ -1,17 +1,17 @@
-package com.isxcode.acorn.modules.file.service;
+package com.isxcode.meta.modules.file.service;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.unit.DataSizeUtil;
-import com.isxcode.acorn.api.file.pojos.req.DeleteFileReq;
-import com.isxcode.acorn.api.file.pojos.req.DownloadFileReq;
-import com.isxcode.acorn.api.file.pojos.req.PageFileReq;
-import com.isxcode.acorn.api.file.pojos.res.PageFileRes;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.utils.path.PathUtils;
-import com.isxcode.acorn.modules.file.entity.FileEntity;
-import com.isxcode.acorn.modules.file.mapper.FileMapper;
-import com.isxcode.acorn.modules.file.repository.FileRepository;
+import com.isxcode.meta.api.file.pojos.req.DeleteFileReq;
+import com.isxcode.meta.api.file.pojos.req.DownloadFileReq;
+import com.isxcode.meta.api.file.pojos.req.PageFileReq;
+import com.isxcode.meta.api.file.pojos.res.PageFileRes;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.utils.path.PathUtils;
+import com.isxcode.meta.modules.file.entity.FileEntity;
+import com.isxcode.meta.modules.file.mapper.FileMapper;
+import com.isxcode.meta.modules.file.repository.FileRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.InputStreamResource;
@@ -32,7 +32,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Optional;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
 
 /**
  * 资源文件接口的业务逻辑.

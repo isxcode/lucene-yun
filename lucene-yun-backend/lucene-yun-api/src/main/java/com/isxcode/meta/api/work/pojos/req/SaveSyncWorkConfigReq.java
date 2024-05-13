@@ -1,7 +1,7 @@
-package com.isxcode.acorn.api.work.pojos.req;
+package com.isxcode.meta.api.work.pojos.req;
 
-import com.isxcode.acorn.api.work.pojos.dto.SyncColumnInfo;
-import com.isxcode.acorn.api.work.pojos.dto.SyncColumnMap;
+import com.isxcode.meta.api.work.pojos.dto.SyncColumnInfo;
+import com.isxcode.meta.api.work.pojos.dto.SyncColumnMap;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

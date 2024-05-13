@@ -1,4 +1,4 @@
-package com.isxcode.acorn.backend.api.base.properties;
+package com.isxcode.meta.backend.api.base.properties;
 
 import java.util.List;
 
@@ -31,12 +31,12 @@ public class IsxAppProperties {
     /**
      * aes密钥.
      */
-    private String aesSlat = "flink-yun";
+    private String aesSlat = "lucene-yun";
 
     /**
      * jwt密钥.
      */
-    private String jwtKey = "flink-yun";
+    private String jwtKey = "lucene-yun";
 
     /**
      * jwt超时.(分钟)

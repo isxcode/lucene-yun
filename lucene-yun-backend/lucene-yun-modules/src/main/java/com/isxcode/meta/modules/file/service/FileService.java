@@ -1,8 +1,8 @@
-package com.isxcode.acorn.modules.file.service;
+package com.isxcode.meta.modules.file.service;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.file.entity.FileEntity;
-import com.isxcode.acorn.modules.file.repository.FileRepository;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.file.entity.FileEntity;
+import com.isxcode.meta.modules.file.repository.FileRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

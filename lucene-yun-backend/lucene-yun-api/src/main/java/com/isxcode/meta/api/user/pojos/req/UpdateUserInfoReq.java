@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.user.pojos.req;
+package com.isxcode.meta.api.user.pojos.req;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -8,7 +8,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 /**
- * ClassName: UpdateUserStatusReq Package: com.isxcode.acorn.api.user.pojos.req Description:
+ * ClassName: UpdateUserStatusReq Package: com.isxcode.meta.api.user.pojos.req Description:
  *
  * @Author 一只有梦想的咸鱼
  * @Version 1.0

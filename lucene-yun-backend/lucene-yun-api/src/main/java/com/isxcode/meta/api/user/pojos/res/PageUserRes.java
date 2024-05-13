@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.user.pojos.res;
+package com.isxcode.meta.api.user.pojos.res;
 
-import com.isxcode.acorn.api.user.pojos.dto.UsrUserDto;
+import com.isxcode.meta.api.user.pojos.dto.UsrUserDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

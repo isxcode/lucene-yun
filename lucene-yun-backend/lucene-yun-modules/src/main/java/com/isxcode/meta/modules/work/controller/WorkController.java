@@ -1,12 +1,12 @@
-package com.isxcode.acorn.modules.work.controller;
+package com.isxcode.meta.modules.work.controller;
 
-import com.isxcode.acorn.api.main.constants.ModuleCode;
-import com.isxcode.acorn.api.work.pojos.req.*;
-import com.isxcode.acorn.api.work.pojos.res.*;
-import com.isxcode.acorn.common.annotations.successResponse.SuccessResponse;
-import com.isxcode.acorn.modules.work.service.biz.SyncWorkBizService;
-import com.isxcode.acorn.modules.work.service.biz.WorkBizService;
-import com.isxcode.acorn.modules.work.service.biz.WorkConfigBizService;
+import com.isxcode.meta.api.main.constants.ModuleCode;
+import com.isxcode.meta.api.work.pojos.req.*;
+import com.isxcode.meta.api.work.pojos.res.*;
+import com.isxcode.meta.common.annotations.successResponse.SuccessResponse;
+import com.isxcode.meta.modules.work.service.biz.SyncWorkBizService;
+import com.isxcode.meta.modules.work.service.biz.WorkBizService;
+import com.isxcode.meta.modules.work.service.biz.WorkConfigBizService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

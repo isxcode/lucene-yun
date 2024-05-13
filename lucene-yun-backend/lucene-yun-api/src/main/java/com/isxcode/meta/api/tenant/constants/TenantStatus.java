@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.tenant.constants;
+package com.isxcode.meta.api.tenant.constants;
 
 public interface TenantStatus {
 

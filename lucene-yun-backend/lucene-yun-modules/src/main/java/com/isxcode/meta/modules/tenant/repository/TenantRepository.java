@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.tenant.repository;
+package com.isxcode.meta.modules.tenant.repository;
 
-import com.isxcode.acorn.modules.tenant.entity.TenantEntity;
+import com.isxcode.meta.modules.tenant.entity.TenantEntity;
 import java.util.Optional;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;

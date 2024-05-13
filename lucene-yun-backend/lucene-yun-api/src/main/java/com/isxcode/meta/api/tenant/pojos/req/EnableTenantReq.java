@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.tenant.pojos.req;
+package com.isxcode.meta.api.tenant.pojos.req;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotEmpty;

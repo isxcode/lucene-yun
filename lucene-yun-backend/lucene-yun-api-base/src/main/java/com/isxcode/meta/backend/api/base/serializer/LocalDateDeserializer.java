@@ -1,4 +1,4 @@
-package com.isxcode.acorn.backend.api.base.serializer;
+package com.isxcode.meta.backend.api.base.serializer;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

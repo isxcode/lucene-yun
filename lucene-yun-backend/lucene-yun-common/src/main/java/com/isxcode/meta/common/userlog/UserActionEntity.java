@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.userlog;
+package com.isxcode.meta.common.userlog;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDateTime;
@@ -22,7 +22,7 @@ public class UserActionEntity {
 
     @Id
     @GeneratedValue(generator = "sy-id-generator")
-    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.acorn.config.GeneratedValueConfig")
+    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.meta.config.GeneratedValueConfig")
     private String id;
 
     private String userId;

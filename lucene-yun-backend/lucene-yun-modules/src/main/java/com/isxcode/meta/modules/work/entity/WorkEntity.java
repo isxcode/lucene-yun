@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.work.entity;
+package com.isxcode.meta.modules.work.entity;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDateTime;
@@ -36,7 +36,7 @@ public class WorkEntity {
 
     @Id
     @GeneratedValue(generator = "sy-id-generator")
-    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.acorn.config.GeneratedValueConfig")
+    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.meta.config.GeneratedValueConfig")
     private String id;
 
     private String name;

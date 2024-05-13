@@ -38,13 +38,13 @@ for arg in "$@"; do
 done
 
 # 初始化agent_path
-agent_path="${home_path}/zhiliuyun-agent"
+agent_path="${home_path}/zhishuyun-agent"
 
 # 导入用户自己配置的环境变量
 source ${agent_path}/conf/agent-env.sh
 
 # 将文件解压到指定目录
-tar -xf ${BASE_PATH}/zhiliuyun-agent.tar.gz -C ${home_path} > /dev/null
+tar -xf ${BASE_PATH}/zhishuyun-agent.tar.gz -C ${home_path} > /dev/null
 cp -r ${agent_path}/lib/fastjson* ${agent_path}/flink-min/lib
 cp -r ${agent_path}/lib/flink* ${agent_path}/flink-min/lib
 cp -r ${agent_path}/lib/*connector* ${agent_path}/flink-min/lib
@@ -52,19 +52,19 @@ cp -r ${agent_path}/lib/*connector* ${agent_path}/flink-min/lib
 # 进入代理目录,防止logs文件夹生成错位
 cd ${agent_path}
 
-# 判断zhiliuyun-agent.log是否存在,不存在则新建
-if [ ! -f "${agent_path}/logs/zhiliuyun-agent.log" ]; then
+# 判断zhishuyun-agent.log是否存在,不存在则新建
+if [ ! -f "${agent_path}/logs/zhishuyun-agent.log" ]; then
   mkdir "${agent_path}/logs"
-  touch "${agent_path}/logs/zhiliuyun-agent.log"
+  touch "${agent_path}/logs/zhishuyun-agent.log"
 fi
 
 # 运行代理程序
 if ! command -v java &>/dev/null; then
-  nohup $JAVA_HOME/bin/java -jar -Xmx2048m ${agent_path}/lib/zhiliuyun-agent.jar --server.port=${agent_port} --spring.config.additional-location=${agent_path}/conf/ > /dev/null 2>&1 &
+  nohup $JAVA_HOME/bin/java -jar -Xmx2048m ${agent_path}/lib/zhishuyun-agent.jar --server.port=${agent_port} --spring.config.additional-location=${agent_path}/conf/ > /dev/null 2>&1 &
 else
-  nohup java -jar -Xmx2048m ${agent_path}/lib/zhiliuyun-agent.jar --server.port=${agent_port} --spring.config.additional-location=${agent_path}/conf/ > /dev/null 2>&1 &
+  nohup java -jar -Xmx2048m ${agent_path}/lib/zhishuyun-agent.jar --server.port=${agent_port} --spring.config.additional-location=${agent_path}/conf/ > /dev/null 2>&1 &
 fi
-echo $! >${agent_path}/zhiliuyun-agent.pid
+echo $! >${agent_path}/zhishuyun-agent.pid
 
 # 如果用户需要默认flink
 if [ ${agent_type} = "flinkcluster" ]; then
@@ -72,8 +72,8 @@ if [ ${agent_type} = "flinkcluster" ]; then
 fi
 
 # 检查是否安装
-if [ -e "${agent_path}/zhiliuyun-agent.pid" ]; then
-  pid=$(cat "${agent_path}/zhiliuyun-agent.pid")
+if [ -e "${agent_path}/zhishuyun-agent.pid" ]; then
+  pid=$(cat "${agent_path}/zhishuyun-agent.pid")
   sleep 10
   if ps -p $pid >/dev/null 2>&1; then
     json_output="{ \
@@ -91,4 +91,4 @@ if [ -e "${agent_path}/zhiliuyun-agent.pid" ]; then
 fi
 
 # 删除安装包 和 安装脚本
-rm ${BASE_PATH}/zhiliuyun-agent.tar.gz && rm ${BASE_PATH}/agent-install.sh
+rm ${BASE_PATH}/zhishuyun-agent.tar.gz && rm ${BASE_PATH}/agent-install.sh

@@ -1,13 +1,13 @@
-package com.isxcode.acorn.modules.tenant.controller;
+package com.isxcode.meta.modules.tenant.controller;
 
-import com.isxcode.acorn.api.main.constants.ModuleCode;
-import com.isxcode.acorn.api.tenant.pojos.req.*;
-import com.isxcode.acorn.api.tenant.pojos.res.GetTenantRes;
-import com.isxcode.acorn.api.tenant.pojos.res.PageTenantRes;
-import com.isxcode.acorn.api.tenant.pojos.res.QueryUserTenantRes;
-import com.isxcode.acorn.api.user.constants.RoleType;
-import com.isxcode.acorn.common.annotations.successResponse.SuccessResponse;
-import com.isxcode.acorn.modules.tenant.service.biz.TenantBizService;
+import com.isxcode.meta.api.main.constants.ModuleCode;
+import com.isxcode.meta.api.tenant.pojos.req.*;
+import com.isxcode.meta.api.tenant.pojos.res.GetTenantRes;
+import com.isxcode.meta.api.tenant.pojos.res.PageTenantRes;
+import com.isxcode.meta.api.tenant.pojos.res.QueryUserTenantRes;
+import com.isxcode.meta.api.user.constants.RoleType;
+import com.isxcode.meta.common.annotations.successResponse.SuccessResponse;
+import com.isxcode.meta.modules.tenant.service.biz.TenantBizService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.List;

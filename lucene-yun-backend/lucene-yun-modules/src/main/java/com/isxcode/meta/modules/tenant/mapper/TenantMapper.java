@@ -1,12 +1,12 @@
-package com.isxcode.acorn.modules.tenant.mapper;
+package com.isxcode.meta.modules.tenant.mapper;
 
-import com.isxcode.acorn.api.tenant.pojos.req.AddTenantReq;
-import com.isxcode.acorn.api.tenant.pojos.req.UpdateTenantForSystemAdminReq;
-import com.isxcode.acorn.api.tenant.pojos.req.UpdateTenantForTenantAdminReq;
-import com.isxcode.acorn.api.tenant.pojos.res.PageTenantRes;
-import com.isxcode.acorn.api.tenant.pojos.res.QueryUserTenantRes;
-import com.isxcode.acorn.api.user.constants.UserStatus;
-import com.isxcode.acorn.modules.tenant.entity.TenantEntity;
+import com.isxcode.meta.api.tenant.pojos.req.AddTenantReq;
+import com.isxcode.meta.api.tenant.pojos.req.UpdateTenantForSystemAdminReq;
+import com.isxcode.meta.api.tenant.pojos.req.UpdateTenantForTenantAdminReq;
+import com.isxcode.meta.api.tenant.pojos.res.PageTenantRes;
+import com.isxcode.meta.api.tenant.pojos.res.QueryUserTenantRes;
+import com.isxcode.meta.api.user.constants.UserStatus;
+import com.isxcode.meta.modules.tenant.entity.TenantEntity;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

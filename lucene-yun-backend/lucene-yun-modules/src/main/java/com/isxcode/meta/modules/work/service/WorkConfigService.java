@@ -1,17 +1,17 @@
-package com.isxcode.acorn.modules.work.service;
+package com.isxcode.meta.modules.work.service;
 
 import com.alibaba.fastjson.JSON;
-import com.isxcode.acorn.api.work.constants.ResourceLevel;
-import com.isxcode.acorn.api.work.constants.SetMode;
-import com.isxcode.acorn.api.work.constants.WorkType;
-import com.isxcode.acorn.api.work.pojos.dto.ClusterConfig;
-import com.isxcode.acorn.api.work.pojos.dto.CronConfig;
-import com.isxcode.acorn.api.work.pojos.dto.SyncRule;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.datasource.entity.DatasourceEntity;
-import com.isxcode.acorn.modules.datasource.service.DatasourceService;
-import com.isxcode.acorn.modules.work.entity.WorkConfigEntity;
-import com.isxcode.acorn.modules.work.repository.WorkConfigRepository;
+import com.isxcode.meta.api.work.constants.ResourceLevel;
+import com.isxcode.meta.api.work.constants.SetMode;
+import com.isxcode.meta.api.work.constants.WorkType;
+import com.isxcode.meta.api.work.pojos.dto.ClusterConfig;
+import com.isxcode.meta.api.work.pojos.dto.CronConfig;
+import com.isxcode.meta.api.work.pojos.dto.SyncRule;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.datasource.entity.DatasourceEntity;
+import com.isxcode.meta.modules.datasource.service.DatasourceService;
+import com.isxcode.meta.modules.work.entity.WorkConfigEntity;
+import com.isxcode.meta.modules.work.repository.WorkConfigRepository;
 
 import java.util.HashMap;
 import java.util.Map;

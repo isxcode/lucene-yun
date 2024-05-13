@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.work.pojos.req;
+package com.isxcode.meta.api.work.pojos.req;
 
-import com.isxcode.acorn.api.work.constants.WorkType;
+import com.isxcode.meta.api.work.constants.WorkType;
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;

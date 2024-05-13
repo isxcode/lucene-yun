@@ -1,10 +1,10 @@
-package com.isxcode.acorn.modules.func.mapper;
+package com.isxcode.meta.modules.func.mapper;
 
-import com.isxcode.acorn.api.func.pojos.dto.FuncInfo;
-import com.isxcode.acorn.api.func.pojos.req.AddFuncReq;
-import com.isxcode.acorn.api.func.pojos.req.UpdateFuncReq;
-import com.isxcode.acorn.api.func.pojos.res.PageFuncRes;
-import com.isxcode.acorn.modules.func.entity.FuncEntity;
+import com.isxcode.meta.api.func.pojos.dto.FuncInfo;
+import com.isxcode.meta.api.func.pojos.req.AddFuncReq;
+import com.isxcode.meta.api.func.pojos.req.UpdateFuncReq;
+import com.isxcode.meta.api.func.pojos.res.PageFuncRes;
+import com.isxcode.meta.modules.func.entity.FuncEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

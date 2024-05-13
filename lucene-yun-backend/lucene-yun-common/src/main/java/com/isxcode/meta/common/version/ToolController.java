@@ -1,6 +1,6 @@
-package com.isxcode.acorn.common.version;
+package com.isxcode.meta.common.version;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

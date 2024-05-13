@@ -1,22 +1,22 @@
-package com.isxcode.acorn.modules.datasource.service.biz;
+package com.isxcode.meta.modules.datasource.service.biz;
 
 import com.alibaba.fastjson2.JSON;
-import com.isxcode.acorn.api.datasource.constants.DatasourceStatus;
-import com.isxcode.acorn.api.datasource.constants.DatasourceType;
-import com.isxcode.acorn.api.datasource.pojos.dto.KafkaConfig;
-import com.isxcode.acorn.api.datasource.pojos.req.*;
-import com.isxcode.acorn.api.datasource.pojos.res.*;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.utils.AesUtils;
-import com.isxcode.acorn.common.utils.path.PathUtils;
-import com.isxcode.acorn.modules.datasource.entity.DatabaseDriverEntity;
-import com.isxcode.acorn.modules.datasource.entity.DatasourceEntity;
-import com.isxcode.acorn.modules.datasource.mapper.DatasourceMapper;
-import com.isxcode.acorn.modules.datasource.repository.DatabaseDriverRepository;
-import com.isxcode.acorn.modules.datasource.repository.DatasourceRepository;
-import com.isxcode.acorn.modules.datasource.service.DatabaseDriverService;
-import com.isxcode.acorn.modules.datasource.service.DatasourceService;
+import com.isxcode.meta.api.datasource.constants.DatasourceStatus;
+import com.isxcode.meta.api.datasource.constants.DatasourceType;
+import com.isxcode.meta.api.datasource.pojos.dto.KafkaConfig;
+import com.isxcode.meta.api.datasource.pojos.req.*;
+import com.isxcode.meta.api.datasource.pojos.res.*;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.utils.AesUtils;
+import com.isxcode.meta.common.utils.path.PathUtils;
+import com.isxcode.meta.modules.datasource.entity.DatabaseDriverEntity;
+import com.isxcode.meta.modules.datasource.entity.DatasourceEntity;
+import com.isxcode.meta.modules.datasource.mapper.DatasourceMapper;
+import com.isxcode.meta.modules.datasource.repository.DatabaseDriverRepository;
+import com.isxcode.meta.modules.datasource.repository.DatasourceRepository;
+import com.isxcode.meta.modules.datasource.service.DatabaseDriverService;
+import com.isxcode.meta.modules.datasource.service.DatasourceService;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,9 +38,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import static com.isxcode.acorn.common.config.CommonConfig.JPA_TENANT_MODE;
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
-import static com.isxcode.acorn.modules.datasource.service.DatasourceService.ALL_EXIST_DRIVER;
+import static com.isxcode.meta.common.config.CommonConfig.JPA_TENANT_MODE;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.modules.datasource.service.DatasourceService.ALL_EXIST_DRIVER;
 
 @Service
 @Slf4j

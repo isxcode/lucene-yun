@@ -1,6 +1,6 @@
-package com.isxcode.acorn.common.utils.ssh;
+package com.isxcode.meta.common.utils.ssh;
 
-import com.isxcode.acorn.api.cluster.pojos.dto.ScpFileEngineNodeDto;
+import com.isxcode.meta.api.cluster.pojos.dto.ScpFileEngineNodeDto;
 import com.jcraft.jsch.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.FileSystemResourceLoader;

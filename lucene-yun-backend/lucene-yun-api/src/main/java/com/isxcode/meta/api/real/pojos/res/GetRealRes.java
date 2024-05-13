@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.real.pojos.res;
+package com.isxcode.meta.api.real.pojos.res;
 
-import com.isxcode.acorn.api.work.pojos.dto.SyncWorkConfig;
+import com.isxcode.meta.api.work.pojos.dto.SyncWorkConfig;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

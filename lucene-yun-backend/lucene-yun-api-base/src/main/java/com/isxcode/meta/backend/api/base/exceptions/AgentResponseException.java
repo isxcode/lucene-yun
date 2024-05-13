@@ -1,4 +1,4 @@
-package com.isxcode.acorn.backend.api.base.exceptions;
+package com.isxcode.meta.backend.api.base.exceptions;
 
 import lombok.Getter;
 import lombok.Setter;

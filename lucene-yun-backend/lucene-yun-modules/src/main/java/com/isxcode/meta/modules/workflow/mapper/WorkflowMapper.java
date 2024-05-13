@@ -1,13 +1,13 @@
-package com.isxcode.acorn.modules.workflow.mapper;
+package com.isxcode.meta.modules.workflow.mapper;
 
-import com.isxcode.acorn.api.monitor.pojos.ao.WorkflowMonitorAo;
-import com.isxcode.acorn.api.monitor.pojos.res.PageInstancesRes;
-import com.isxcode.acorn.api.workflow.pojos.dto.WorkInstanceInfo;
-import com.isxcode.acorn.api.workflow.pojos.req.AddWorkflowReq;
-import com.isxcode.acorn.api.workflow.pojos.req.UpdateWorkflowReq;
-import com.isxcode.acorn.api.workflow.pojos.res.PageWorkflowRes;
-import com.isxcode.acorn.modules.work.entity.WorkInstanceEntity;
-import com.isxcode.acorn.modules.workflow.entity.WorkflowEntity;
+import com.isxcode.meta.api.monitor.pojos.ao.WorkflowMonitorAo;
+import com.isxcode.meta.api.monitor.pojos.res.PageInstancesRes;
+import com.isxcode.meta.api.workflow.pojos.dto.WorkInstanceInfo;
+import com.isxcode.meta.api.workflow.pojos.req.AddWorkflowReq;
+import com.isxcode.meta.api.workflow.pojos.req.UpdateWorkflowReq;
+import com.isxcode.meta.api.workflow.pojos.res.PageWorkflowRes;
+import com.isxcode.meta.modules.work.entity.WorkInstanceEntity;
+import com.isxcode.meta.modules.workflow.entity.WorkflowEntity;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

@@ -1,6 +1,6 @@
-package com.isxcode.acorn.security.exception;
+package com.isxcode.meta.security.exception;
 
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.utils.md5;
+package com.isxcode.meta.common.utils.md5;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

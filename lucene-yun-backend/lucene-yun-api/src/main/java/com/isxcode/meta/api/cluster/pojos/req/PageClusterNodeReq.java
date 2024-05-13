@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.cluster.pojos.req;
+package com.isxcode.meta.api.cluster.pojos.req;
 
-import com.isxcode.acorn.backend.api.base.pojos.BasePageRequest;
+import com.isxcode.meta.backend.api.base.pojos.BasePageRequest;
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotEmpty;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.api.pojos.req;
+package com.isxcode.meta.api.api.pojos.req;
 
-import com.isxcode.acorn.api.api.pojos.dto.HeaderTokenDto;
+import com.isxcode.meta.api.api.pojos.dto.HeaderTokenDto;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotEmpty;

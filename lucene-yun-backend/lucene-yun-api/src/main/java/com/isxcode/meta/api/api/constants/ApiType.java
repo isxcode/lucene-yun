@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.api.constants;
+package com.isxcode.meta.api.api.constants;
 
 public interface ApiType {
 

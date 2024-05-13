@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.workflow.repository;
+package com.isxcode.meta.modules.workflow.repository;
 
-import com.isxcode.acorn.modules.workflow.entity.WorkflowEntity;
+import com.isxcode.meta.modules.workflow.entity.WorkflowEntity;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

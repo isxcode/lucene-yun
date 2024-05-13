@@ -1,9 +1,9 @@
-package com.isxcode.acorn.common.utils.jwt;
+package com.isxcode.meta.common.utils.jwt;
 
 import cn.hutool.crypto.SecureUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.JwtParserBuilder;
 import io.jsonwebtoken.Jwts;

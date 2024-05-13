@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.workflow.pojos.res;
+package com.isxcode.meta.api.workflow.pojos.res;
 
-import com.isxcode.acorn.api.work.pojos.dto.CronConfig;
+import com.isxcode.meta.api.work.pojos.dto.CronConfig;
 import lombok.Data;
 
 @Data

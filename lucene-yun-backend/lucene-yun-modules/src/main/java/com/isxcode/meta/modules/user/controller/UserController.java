@@ -1,11 +1,11 @@
-package com.isxcode.acorn.modules.user.controller;
+package com.isxcode.meta.modules.user.controller;
 
-import com.isxcode.acorn.api.main.constants.ModuleCode;
-import com.isxcode.acorn.api.user.constants.RoleType;
-import com.isxcode.acorn.api.user.pojos.req.*;
-import com.isxcode.acorn.api.user.pojos.res.*;
-import com.isxcode.acorn.common.annotations.successResponse.SuccessResponse;
-import com.isxcode.acorn.modules.user.service.UserBizService;
+import com.isxcode.meta.api.main.constants.ModuleCode;
+import com.isxcode.meta.api.user.constants.RoleType;
+import com.isxcode.meta.api.user.pojos.req.*;
+import com.isxcode.meta.api.user.pojos.res.*;
+import com.isxcode.meta.common.annotations.successResponse.SuccessResponse;
+import com.isxcode.meta.modules.user.service.UserBizService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 

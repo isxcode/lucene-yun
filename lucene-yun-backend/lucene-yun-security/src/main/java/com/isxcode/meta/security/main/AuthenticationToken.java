@@ -1,4 +1,4 @@
-package com.isxcode.acorn.security.main;
+package com.isxcode.meta.security.main;
 
 import java.util.Collection;
 import org.springframework.security.authentication.AbstractAuthenticationToken;

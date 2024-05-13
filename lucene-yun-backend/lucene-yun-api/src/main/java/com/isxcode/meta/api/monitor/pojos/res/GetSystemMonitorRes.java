@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.monitor.pojos.res;
+package com.isxcode.meta.api.monitor.pojos.res;
 
-import com.isxcode.acorn.api.monitor.pojos.dto.SystemMonitorDto;
+import com.isxcode.meta.api.monitor.pojos.dto.SystemMonitorDto;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Data;

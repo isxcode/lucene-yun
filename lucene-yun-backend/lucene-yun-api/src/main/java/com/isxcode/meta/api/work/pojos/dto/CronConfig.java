@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.work.pojos.dto;
+package com.isxcode.meta.api.work.pojos.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

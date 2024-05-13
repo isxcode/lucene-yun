@@ -1,6 +1,6 @@
-package com.isxcode.acorn.config;
+package com.isxcode.meta.config;
 
-import static com.isxcode.acorn.common.config.CommonConfig.USER_ID;
+import static com.isxcode.meta.common.config.CommonConfig.USER_ID;
 
 import java.util.Optional;
 import org.springframework.data.domain.AuditorAware;

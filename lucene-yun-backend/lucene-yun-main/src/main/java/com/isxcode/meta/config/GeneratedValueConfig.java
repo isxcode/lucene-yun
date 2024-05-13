@@ -1,4 +1,4 @@
-package com.isxcode.acorn.config;
+package com.isxcode.meta.config;
 
 import java.io.Serializable;
 

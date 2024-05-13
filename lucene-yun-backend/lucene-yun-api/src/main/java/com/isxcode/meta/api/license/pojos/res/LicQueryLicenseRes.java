@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.license.pojos.res;
+package com.isxcode.meta.api.license.pojos.res;
 
 import lombok.Data;
 

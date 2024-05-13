@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.work.repository;
+package com.isxcode.meta.modules.work.repository;
 
-import com.isxcode.acorn.modules.work.entity.WorkInstanceEntity;
+import com.isxcode.meta.modules.work.entity.WorkInstanceEntity;
 import java.util.List;
 import java.util.Map;
 import org.springframework.cache.annotation.CacheConfig;

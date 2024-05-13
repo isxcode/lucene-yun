@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.work.pojos.res;
+package com.isxcode.meta.api.work.pojos.res;
 
 import java.util.List;
 import lombok.AllArgsConstructor;

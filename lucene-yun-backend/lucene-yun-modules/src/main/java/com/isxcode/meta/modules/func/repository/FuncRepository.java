@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.func.repository;
+package com.isxcode.meta.modules.func.repository;
 
-import com.isxcode.acorn.modules.func.entity.FuncEntity;
+import com.isxcode.meta.modules.func.entity.FuncEntity;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

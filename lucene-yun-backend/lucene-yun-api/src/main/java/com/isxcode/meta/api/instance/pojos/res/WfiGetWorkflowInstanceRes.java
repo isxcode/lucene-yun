@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.instance.pojos.res;
+package com.isxcode.meta.api.instance.pojos.res;
 
-import com.isxcode.acorn.api.instance.pojos.vo.WorkInstanceVo;
+import com.isxcode.meta.api.instance.pojos.vo.WorkInstanceVo;
 import java.util.List;
 import lombok.Data;
 
