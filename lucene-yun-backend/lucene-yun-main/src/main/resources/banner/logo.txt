@@ -1,0 +1,25 @@
+${AnsiColor.GREEN}
+
+LLLLLLLLLLL                                                                                                                  YYYYYYY       YYYYYYY
+L:::::::::L                                                                                                                  Y:::::Y       Y:::::Y
+L:::::::::L                                                                                                                  Y:::::Y       Y:::::Y
+LL:::::::LL                                                                                                                  Y::::::Y     Y::::::Y
+  L:::::L               uuuuuu    uuuuuu      cccccccccccccccc    eeeeeeeeeeee    nnnn  nnnnnnnn        eeeeeeeeeeee         YYY:::::Y   Y:::::YYYuuuuuu    uuuuuunnnn  nnnnnnnn
+  L:::::L               u::::u    u::::u    cc:::::::::::::::c  ee::::::::::::ee  n:::nn::::::::nn    ee::::::::::::ee          Y:::::Y Y:::::Y   u::::u    u::::un:::nn::::::::nn
+  L:::::L               u::::u    u::::u   c:::::::::::::::::c e::::::eeeee:::::een::::::::::::::nn  e::::::eeeee:::::ee         Y:::::Y:::::Y    u::::u    u::::un::::::::::::::nn
+  L:::::L               u::::u    u::::u  c:::::::cccccc:::::ce::::::e     e:::::enn:::::::::::::::ne::::::e     e:::::e          Y:::::::::Y     u::::u    u::::unn:::::::::::::::n
+  L:::::L               u::::u    u::::u  c::::::c     ccccccce:::::::eeeee::::::e  n:::::nnnn:::::ne:::::::eeeee::::::e           Y:::::::Y      u::::u    u::::u  n:::::nnnn:::::n
+  L:::::L               u::::u    u::::u  c:::::c             e:::::::::::::::::e   n::::n    n::::ne:::::::::::::::::e             Y:::::Y       u::::u    u::::u  n::::n    n::::n
+  L:::::L               u::::u    u::::u  c:::::c             e::::::eeeeeeeeeee    n::::n    n::::ne::::::eeeeeeeeeee              Y:::::Y       u::::u    u::::u  n::::n    n::::n
+  L:::::L         LLLLLLu:::::uuuu:::::u  c::::::c     ccccccce:::::::e             n::::n    n::::ne:::::::e                       Y:::::Y       u:::::uuuu:::::u  n::::n    n::::n
+LL:::::::LLLLLLLLL:::::Lu:::::::::::::::uuc:::::::cccccc:::::ce::::::::e            n::::n    n::::ne::::::::e                      Y:::::Y       u:::::::::::::::uun::::n    n::::n
+L::::::::::::::::::::::L u:::::::::::::::u c:::::::::::::::::c e::::::::eeeeeeee    n::::n    n::::n e::::::::eeeeeeee           YYYY:::::YYYY     u:::::::::::::::un::::n    n::::n
+L::::::::::::::::::::::L  uu::::::::uu:::u  cc:::::::::::::::c  ee:::::::::::::e    n::::n    n::::n  ee:::::::::::::e           Y:::::::::::Y      uu::::::::uu:::un::::n    n::::n
+LLLLLLLLLLLLLLLLLLLLLLLL    uuuuuuuu  uuuu    cccccccccccccccc    eeeeeeeeeeeeee    nnnnnn    nnnnnn    eeeeeeeeeeeeee           YYYYYYYYYYYYY        uuuuuuuu  uuuunnnnnn    nnnnnn
+
+${AnsiColor.BRIGHT_MAGENTA}
+项目: ${application.title}
+官网: ${application.website}
+描述: ${application.describe}
+
+${AnsiColor.WHITE}
