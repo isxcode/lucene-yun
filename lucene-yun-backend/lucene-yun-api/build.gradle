@@ -1,0 +1,4 @@
+dependencies {
+
+  api(project(":lucene-yun-backend:lucene-yun-api-base"))
+}
