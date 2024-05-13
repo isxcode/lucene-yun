@@ -1,7 +1,7 @@
-package com.isxcode.acorn.config;
+package com.isxcode.meta.config;
 
-import static com.isxcode.acorn.common.config.CommonConfig.JPA_TENANT_MODE;
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.JPA_TENANT_MODE;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
 
 import org.apache.logging.log4j.util.Strings;
 import org.hibernate.resource.jdbc.spi.StatementInspector;

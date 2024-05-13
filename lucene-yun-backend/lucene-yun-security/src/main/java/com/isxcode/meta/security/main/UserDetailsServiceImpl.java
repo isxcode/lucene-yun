@@ -1,14 +1,14 @@
-package com.isxcode.acorn.security.main;
+package com.isxcode.meta.security.main;
 
-import static com.isxcode.acorn.common.config.CommonConfig.JPA_TENANT_MODE;
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.JPA_TENANT_MODE;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
 
-import com.isxcode.acorn.api.user.constants.RoleType;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.security.user.TenantUserEntity;
-import com.isxcode.acorn.security.user.TenantUserRepository;
-import com.isxcode.acorn.security.user.UserEntity;
-import com.isxcode.acorn.security.user.UserRepository;
+import com.isxcode.meta.api.user.constants.RoleType;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.security.user.TenantUserEntity;
+import com.isxcode.meta.security.user.TenantUserRepository;
+import com.isxcode.meta.security.user.UserEntity;
+import com.isxcode.meta.security.user.UserRepository;
 
 import java.util.Optional;
 

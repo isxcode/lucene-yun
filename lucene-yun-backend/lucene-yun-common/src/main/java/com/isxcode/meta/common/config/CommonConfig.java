@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.config;
+package com.isxcode.meta.common.config;
 
 import org.springframework.context.annotation.Configuration;
 

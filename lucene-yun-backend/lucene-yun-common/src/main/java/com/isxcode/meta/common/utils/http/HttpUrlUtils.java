@@ -1,6 +1,6 @@
-package com.isxcode.acorn.common.utils.http;
+package com.isxcode.meta.common.utils.http;
 
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

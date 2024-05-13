@@ -1,8 +1,8 @@
-package com.isxcode.acorn.modules.api.repository;
+package com.isxcode.meta.modules.api.repository;
 
 import java.util.Optional;
 
-import com.isxcode.acorn.modules.api.entity.ApiEntity;
+import com.isxcode.meta.modules.api.entity.ApiEntity;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

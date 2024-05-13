@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.workflow.entity;
+package com.isxcode.meta.modules.workflow.entity;
 
-import com.isxcode.acorn.modules.work.entity.WorkExportInfo;
+import com.isxcode.meta.modules.work.entity.WorkExportInfo;
 import java.util.List;
 import lombok.Builder;
 import lombok.Data;

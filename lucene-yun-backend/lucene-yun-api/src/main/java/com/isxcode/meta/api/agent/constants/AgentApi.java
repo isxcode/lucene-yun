@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.agent.constants;
+package com.isxcode.meta.api.agent.constants;
 
 public interface AgentApi {
 

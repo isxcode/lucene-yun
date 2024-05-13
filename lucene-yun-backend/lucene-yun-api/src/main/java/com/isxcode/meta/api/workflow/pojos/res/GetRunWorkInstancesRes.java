@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.workflow.pojos.res;
+package com.isxcode.meta.api.workflow.pojos.res;
 
-import com.isxcode.acorn.api.workflow.pojos.dto.WorkInstanceInfo;
+import com.isxcode.meta.api.workflow.pojos.dto.WorkInstanceInfo;
 import java.util.List;
 import lombok.Builder;
 import lombok.Data;

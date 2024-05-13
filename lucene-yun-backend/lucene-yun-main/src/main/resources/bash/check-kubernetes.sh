@@ -36,9 +36,9 @@ for arg in "$@"; do
 done
 
 # 初始化agent_path
-agent_path="${home_path}/zhiliuyun-agent"
+agent_path="${home_path}/zhishuyun-agent"
 
-# 创建zhiliuyun-agent目录
+# 创建zhishuyun-agent目录
 if [ ! -d "${agent_path}" ]; then
   mkdir -p "${agent_path}"
 fi
@@ -54,8 +54,8 @@ fi
 source "${agent_path}/conf/agent-env.sh"
 
 # 判断是否之前已安装代理
-if [ -e "${agent_path}/zhiliuyun-agent.pid" ]; then
-  pid=$(cat "${agent_path}/zhiliuyun-agent.pid")
+if [ -e "${agent_path}/zhishuyun-agent.pid" ]; then
+  pid=$(cat "${agent_path}/zhishuyun-agent.pid")
   if ps -p $pid >/dev/null 2>&1; then
     json_output="{ \
             \"status\": \"RUNNING\", \
@@ -133,34 +133,34 @@ if ! docker image inspect flink:1.18.1-scala_2.12 &>/dev/null; then
   exit 0
 fi
 
-# 检测命名空间是否有flink-yun
-if ! kubectl get namespace zhiliuyun-space &>/dev/null; then
+# 检测命名空间是否有lucene-yun
+if ! kubectl get namespace zhishuyun-space &>/dev/null; then
   json_output="{ \
             \"status\": \"INSTALL_ERROR\", \
-            \"log\": \"没有zhiliuyun命令空间，需要执行命令，kubectl create namespace zhiliuyun-space \" \
+            \"log\": \"没有zhishuyun命令空间，需要执行命令，kubectl create namespace zhishuyun-space \" \
           }"
   echo $json_output
   rm ${BASE_PATH}/check-kubernetes.sh
   exit 0
 fi
 
-# 判断是否存在zhiliuyun用户
-if ! kubectl get serviceaccount --namespace zhiliuyun-space | grep -q zhiliuyun; then
+# 判断是否存在zhishuyun用户
+if ! kubectl get serviceaccount --namespace zhishuyun-space | grep -q zhishuyun; then
   json_output="{ \
               \"status\": \"INSTALL_ERROR\", \
-              \"log\": \"zhiliuyun命令空间中，不存在zhiliuyun用户，需要执行命令，kubectl create serviceaccount zhiliuyun -n zhiliuyun-space \" \
+              \"log\": \"zhishuyun命令空间中，不存在zhishuyun用户，需要执行命令，kubectl create serviceaccount zhishuyun -n zhishuyun-space \" \
             }"
   echo $json_output
   rm ${BASE_PATH}/check-kubernetes.sh
   exit 0
 fi
 
-# 判断是否zhiliuyun有读写权限
-hasRole=$(kubectl auth can-i create pods --as=system:serviceaccount:zhiliuyun-space:zhiliuyun 2>&1)
+# 判断是否zhishuyun有读写权限
+hasRole=$(kubectl auth can-i create pods --as=system:serviceaccount:zhishuyun-space:zhishuyun 2>&1)
 if [ "$hasRole" = "no" ]; then
   json_output="{ \
                 \"status\": \"INSTALL_ERROR\", \
-                \"log\": \"zhiliuyun没有创建pod的权限，需要执行命令，kubectl create clusterrolebinding flink-role --clusterrole=edit --serviceaccount=zhiliuyun-space:zhiliuyun --namespace=zhiliuyun-space \" \
+                \"log\": \"zhishuyun没有创建pod的权限，需要执行命令，kubectl create clusterrolebinding flink-role --clusterrole=edit --serviceaccount=zhishuyun-space:zhishuyun --namespace=zhishuyun-space \" \
               }"
   echo $json_output
   rm ${BASE_PATH}/check-kubernetes.sh

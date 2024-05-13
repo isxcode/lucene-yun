@@ -9,7 +9,7 @@ tasks.register('copy_resources_agent', Copy) {
 
   mustRunAfter("clean_resources_agent")
 
-  from rootDir.getAbsolutePath() + '/lucene-yun-dist/build/distributions/zhiliuyun-agent.tar.gz'
+  from rootDir.getAbsolutePath() + '/lucene-yun-dist/build/distributions/zhishuyun-agent.tar.gz'
   into rootDir.getAbsolutePath() + '/lucene-yun-backend/lucene-yun-main/src/main/resources/agent'
 }
 

@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.workflow.pojos.req;
+package com.isxcode.meta.api.workflow.pojos.req;
 
-import com.isxcode.acorn.backend.api.base.pojos.BasePageRequest;
+import com.isxcode.meta.backend.api.base.pojos.BasePageRequest;
 
 public class PageWorkflowReq extends BasePageRequest {
 }

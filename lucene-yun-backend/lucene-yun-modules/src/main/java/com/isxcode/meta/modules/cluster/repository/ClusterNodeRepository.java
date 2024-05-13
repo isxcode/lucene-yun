@@ -1,6 +1,6 @@
-package com.isxcode.acorn.modules.cluster.repository;
+package com.isxcode.meta.modules.cluster.repository;
 
-import com.isxcode.acorn.modules.cluster.entity.ClusterNodeEntity;
+import com.isxcode.meta.modules.cluster.entity.ClusterNodeEntity;
 
 import java.util.List;
 

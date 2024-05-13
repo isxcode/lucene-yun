@@ -36,7 +36,7 @@ for arg in "$@"; do
 done
 
 # 初始化agent_path
-agent_path="${home_path}/zhiliuyun-agent"
+agent_path="${home_path}/zhishuyun-agent"
 
 # 判断home_path目录是否存在
 if [ ! -d "${agent_path}" ]; then
@@ -57,8 +57,8 @@ fi
 source "${agent_path}/conf/agent-env.sh"
 
 # 判断当前是否安装代理
-if [ -e "${agent_path}/zhiliuyun-agent.pid" ]; then
-  pid=$(cat "${agent_path}/zhiliuyun-agent.pid")
+if [ -e "${agent_path}/zhishuyun-agent.pid" ]; then
+  pid=$(cat "${agent_path}/zhishuyun-agent.pid")
   if ps -p $pid >/dev/null 2>&1; then
     json_output="{ \
             \"status\": \"RUNNING\", \

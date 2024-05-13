@@ -1,13 +1,13 @@
-package com.isxcode.acorn.modules.func.controller;
+package com.isxcode.meta.modules.func.controller;
 
-import com.isxcode.acorn.api.func.pojos.req.UpdateFuncReq;
-import com.isxcode.acorn.api.func.pojos.res.PageFuncRes;
-import com.isxcode.acorn.api.main.constants.ModuleCode;
-import com.isxcode.acorn.api.func.pojos.req.AddFuncReq;
-import com.isxcode.acorn.api.func.pojos.req.DeleteFuncReq;
-import com.isxcode.acorn.api.func.pojos.req.PageFuncReq;
-import com.isxcode.acorn.common.annotations.successResponse.SuccessResponse;
-import com.isxcode.acorn.modules.func.service.FuncBizService;
+import com.isxcode.meta.api.func.pojos.req.UpdateFuncReq;
+import com.isxcode.meta.api.func.pojos.res.PageFuncRes;
+import com.isxcode.meta.api.main.constants.ModuleCode;
+import com.isxcode.meta.api.func.pojos.req.AddFuncReq;
+import com.isxcode.meta.api.func.pojos.req.DeleteFuncReq;
+import com.isxcode.meta.api.func.pojos.req.PageFuncReq;
+import com.isxcode.meta.common.annotations.successResponse.SuccessResponse;
+import com.isxcode.meta.modules.func.service.FuncBizService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

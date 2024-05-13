@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.workflow.pojos.req;
+package com.isxcode.meta.api.workflow.pojos.req;
 
-import com.isxcode.acorn.api.work.pojos.dto.CronConfig;
+import com.isxcode.meta.api.work.pojos.dto.CronConfig;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

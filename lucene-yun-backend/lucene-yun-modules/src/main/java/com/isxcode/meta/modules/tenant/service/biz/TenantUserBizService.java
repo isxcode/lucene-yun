@@ -1,19 +1,19 @@
-package com.isxcode.acorn.modules.tenant.service.biz;
+package com.isxcode.meta.modules.tenant.service.biz;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
-import static com.isxcode.acorn.common.config.CommonConfig.USER_ID;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.USER_ID;
 
-import com.isxcode.acorn.api.tenant.pojos.req.*;
-import com.isxcode.acorn.api.tenant.pojos.res.PageTenantUserRes;
-import com.isxcode.acorn.api.user.constants.RoleType;
-import com.isxcode.acorn.api.user.constants.UserStatus;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.tenant.entity.TenantEntity;
-import com.isxcode.acorn.modules.tenant.service.TenantService;
-import com.isxcode.acorn.security.user.TenantUserEntity;
-import com.isxcode.acorn.security.user.TenantUserRepository;
-import com.isxcode.acorn.security.user.UserEntity;
-import com.isxcode.acorn.security.user.UserRepository;
+import com.isxcode.meta.api.tenant.pojos.req.*;
+import com.isxcode.meta.api.tenant.pojos.res.PageTenantUserRes;
+import com.isxcode.meta.api.user.constants.RoleType;
+import com.isxcode.meta.api.user.constants.UserStatus;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.tenant.entity.TenantEntity;
+import com.isxcode.meta.modules.tenant.service.TenantService;
+import com.isxcode.meta.security.user.TenantUserEntity;
+import com.isxcode.meta.security.user.TenantUserRepository;
+import com.isxcode.meta.security.user.UserEntity;
+import com.isxcode.meta.security.user.UserRepository;
 
 import java.util.Optional;
 import javax.transaction.Transactional;

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.tenant.pojos.res;
+package com.isxcode.meta.api.tenant.pojos.res;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

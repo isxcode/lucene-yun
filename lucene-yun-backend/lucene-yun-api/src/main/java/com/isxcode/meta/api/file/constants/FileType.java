@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.file.constants;
+package com.isxcode.meta.api.file.constants;
 
 /**
  * 文件类型.

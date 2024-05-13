@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.plugin;
+package com.isxcode.meta.api.plugin;
 
 public interface OverModeType {
 

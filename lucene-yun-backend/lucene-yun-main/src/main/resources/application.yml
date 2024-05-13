@@ -1,6 +1,6 @@
 application:
   title: 至数云
-  website: https://zhiliuyun.isxcode.com
+  website: https://zhishuyun.isxcode.com
   describe: 打造企业级流式大数据平台
 
 server:
@@ -44,11 +44,11 @@ spring:
     hibernate:
       ddl-auto: none
       naming:
-        physical-strategy: com.isxcode.acorn.config.JpaTableUpperCaseStrategy
+        physical-strategy: com.isxcode.meta.config.JpaTableUpperCaseStrategy
     properties:
       hibernate:
         session_factory:
-          statement_inspector: com.isxcode.acorn.config.JpaTenantInterceptor
+          statement_inspector: com.isxcode.meta.config.JpaTenantInterceptor
 
   mvc:
     view:
@@ -80,12 +80,12 @@ spring:
     path: /swagger-ui/api-docs
   swagger-ui:
     path: /swagger-ui.html
-  packages-to-scan: com.isxcode.acorn
+  packages-to-scan: com.isxcode.meta
 
 logging:
   exception-conversion-word: '%wEx'
   file:
-    name: ./logs/flink-yun.log
+    name: ./logs/lucene-yun.log
   pattern:
     level: '%5p'
     dateformat: 'yyyy-MM-dd HH:mm:ss.SSS'

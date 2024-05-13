@@ -1,17 +1,17 @@
-package com.isxcode.acorn.agent.run;
+package com.isxcode.meta.agent.run;
 
 import com.alibaba.fastjson2.JSON;
-import com.isxcode.acorn.api.agent.pojos.req.GetJobInfoReq;
-import com.isxcode.acorn.api.agent.pojos.req.GetJobLogReq;
-import com.isxcode.acorn.api.agent.pojos.req.StopJobReq;
-import com.isxcode.acorn.api.agent.pojos.req.SubmitJobReq;
-import com.isxcode.acorn.api.agent.pojos.res.GetJobInfoRes;
-import com.isxcode.acorn.api.agent.pojos.res.GetJobLogRes;
-import com.isxcode.acorn.api.agent.pojos.res.StopJobRes;
-import com.isxcode.acorn.api.agent.pojos.res.SubmitJobRes;
-import com.isxcode.acorn.api.api.constants.PathConstants;
-import com.isxcode.acorn.api.work.constants.WorkType;
-import com.isxcode.acorn.backend.api.base.exceptions.AgentResponseException;
+import com.isxcode.meta.api.agent.pojos.req.GetJobInfoReq;
+import com.isxcode.meta.api.agent.pojos.req.GetJobLogReq;
+import com.isxcode.meta.api.agent.pojos.req.StopJobReq;
+import com.isxcode.meta.api.agent.pojos.req.SubmitJobReq;
+import com.isxcode.meta.api.agent.pojos.res.GetJobInfoRes;
+import com.isxcode.meta.api.agent.pojos.res.GetJobLogRes;
+import com.isxcode.meta.api.agent.pojos.res.StopJobRes;
+import com.isxcode.meta.api.agent.pojos.res.SubmitJobRes;
+import com.isxcode.meta.api.api.constants.PathConstants;
+import com.isxcode.meta.api.work.constants.WorkType;
+import com.isxcode.meta.backend.api.base.exceptions.AgentResponseException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.flink.client.deployment.ClusterSpecification;
 import org.apache.flink.client.deployment.application.ApplicationConfiguration;
@@ -55,13 +55,13 @@ public class KubernetesAcorn implements AcornRun {
         }
         flinkConfig.set(ApplicationConfiguration.APPLICATION_MAIN_CLASS, submitJobReq.getEntryClass());
         flinkConfig.set(PipelineOptions.JARS, Collections.singletonList("local:///opt/flink/examples/app.jar"));
-        flinkConfig.set(KubernetesConfigOptions.CLUSTER_ID, "zhiliuyun-cluster-" + System.currentTimeMillis());
+        flinkConfig.set(KubernetesConfigOptions.CLUSTER_ID, "zhishuyun-cluster-" + System.currentTimeMillis());
         flinkConfig.set(KubernetesConfigOptions.REST_SERVICE_EXPOSED_TYPE,
             KubernetesConfigOptions.ServiceExposedType.NodePort);
         flinkConfig.set(KubernetesConfigOptions.CONTAINER_IMAGE_PULL_POLICY,
             KubernetesConfigOptions.ImagePullPolicy.IfNotPresent);
-        flinkConfig.set(KubernetesConfigOptions.NAMESPACE, "zhiliuyun-space");
-        flinkConfig.set(KubernetesConfigOptions.KUBERNETES_SERVICE_ACCOUNT, "zhiliuyun");
+        flinkConfig.set(KubernetesConfigOptions.NAMESPACE, "zhishuyun-space");
+        flinkConfig.set(KubernetesConfigOptions.KUBERNETES_SERVICE_ACCOUNT, "zhishuyun");
         flinkConfig.set(KubernetesConfigOptions.CONTAINER_IMAGE, "flink:1.18.1-scala_2.12");
         flinkConfig.set(KubernetesConfigOptions.TASK_MANAGER_CPU, 2.0);
 
@@ -174,7 +174,7 @@ public class KubernetesAcorn implements AcornRun {
     @Override
     public GetJobInfoRes getJobInfo(GetJobInfoReq getJobInfoReq) {
 
-        String getStatusJobManagerFormat = "kubectl get pods -l app=%s -n zhiliuyun-space";
+        String getStatusJobManagerFormat = "kubectl get pods -l app=%s -n zhishuyun-space";
         String line;
         StringBuilder errLog = new StringBuilder();
 
@@ -201,7 +201,7 @@ public class KubernetesAcorn implements AcornRun {
                     while ((line = errReader.readLine()) != null) {
                         errLog.append(line).append("\n");
                     }
-                    if (errLog.toString().contains("No resources found in zhiliuyun-space namespace")) {
+                    if (errLog.toString().contains("No resources found in zhishuyun-space namespace")) {
                         return GetJobInfoRes.builder().status("FINISHED").jobId(getJobInfoReq.getJobId()).build();
                     }
                 }
@@ -269,8 +269,8 @@ public class KubernetesAcorn implements AcornRun {
 
         Configuration flinkConfig = GlobalConfiguration.loadConfiguration();
         flinkConfig.set(DeploymentOptions.TARGET, KubernetesDeploymentTarget.APPLICATION.getName());
-        flinkConfig.set(KubernetesConfigOptions.NAMESPACE, "zhiliuyun-space");
-        flinkConfig.set(KubernetesConfigOptions.KUBERNETES_SERVICE_ACCOUNT, "zhiliuyun");
+        flinkConfig.set(KubernetesConfigOptions.NAMESPACE, "zhishuyun-space");
+        flinkConfig.set(KubernetesConfigOptions.KUBERNETES_SERVICE_ACCOUNT, "zhishuyun");
 
         KubernetesClusterClientFactory kubernetesClusterClientFactory = new KubernetesClusterClientFactory();
         try (KubernetesClusterDescriptor clusterDescriptor =

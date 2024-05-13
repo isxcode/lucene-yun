@@ -1,11 +1,11 @@
-package com.isxcode.acorn.modules.cluster.mapper;
+package com.isxcode.meta.modules.cluster.mapper;
 
-import com.isxcode.acorn.api.cluster.constants.ClusterStatus;
-import com.isxcode.acorn.api.cluster.pojos.req.AddClusterReq;
-import com.isxcode.acorn.api.cluster.pojos.req.UpdateClusterReq;
-import com.isxcode.acorn.api.cluster.pojos.res.PageClusterRes;
-import com.isxcode.acorn.api.cluster.pojos.res.QueryAllClusterRes;
-import com.isxcode.acorn.modules.cluster.entity.ClusterEntity;
+import com.isxcode.meta.api.cluster.constants.ClusterStatus;
+import com.isxcode.meta.api.cluster.pojos.req.AddClusterReq;
+import com.isxcode.meta.api.cluster.pojos.req.UpdateClusterReq;
+import com.isxcode.meta.api.cluster.pojos.res.PageClusterRes;
+import com.isxcode.meta.api.cluster.pojos.res.QueryAllClusterRes;
+import com.isxcode.meta.modules.cluster.entity.ClusterEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.modules.monitor.entity;
+package com.isxcode.meta.modules.monitor.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -27,7 +27,7 @@ public class MonitorEntity {
 
     @Id
     @GeneratedValue(generator = "sy-id-generator")
-    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.acorn.config.GeneratedValueConfig")
+    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.meta.config.GeneratedValueConfig")
     private String id;
 
     private String clusterId;

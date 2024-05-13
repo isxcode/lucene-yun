@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.monitor.pojos.dto;
+package com.isxcode.meta.api.monitor.pojos.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;

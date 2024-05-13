@@ -1,18 +1,18 @@
-package com.isxcode.acorn.modules.cluster.run;
+package com.isxcode.meta.modules.cluster.run;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
-import static com.isxcode.acorn.common.config.CommonConfig.USER_ID;
-import static com.isxcode.acorn.common.utils.ssh.SshUtils.executeCommand;
-import static com.isxcode.acorn.common.utils.ssh.SshUtils.scpFile;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.USER_ID;
+import static com.isxcode.meta.common.utils.ssh.SshUtils.executeCommand;
+import static com.isxcode.meta.common.utils.ssh.SshUtils.scpFile;
 
 import com.alibaba.fastjson.JSON;
-import com.isxcode.acorn.api.cluster.constants.ClusterNodeStatus;
-import com.isxcode.acorn.api.cluster.pojos.dto.AgentInfo;
-import com.isxcode.acorn.api.cluster.pojos.dto.ScpFileEngineNodeDto;
-import com.isxcode.acorn.api.main.properties.SparkYunProperties;
-import com.isxcode.acorn.modules.cluster.entity.ClusterNodeEntity;
-import com.isxcode.acorn.modules.cluster.repository.ClusterNodeRepository;
-import com.isxcode.acorn.modules.cluster.service.ClusterNodeService;
+import com.isxcode.meta.api.cluster.constants.ClusterNodeStatus;
+import com.isxcode.meta.api.cluster.pojos.dto.AgentInfo;
+import com.isxcode.meta.api.cluster.pojos.dto.ScpFileEngineNodeDto;
+import com.isxcode.meta.api.main.properties.SparkYunProperties;
+import com.isxcode.meta.modules.cluster.entity.ClusterNodeEntity;
+import com.isxcode.meta.modules.cluster.repository.ClusterNodeRepository;
+import com.isxcode.meta.modules.cluster.service.ClusterNodeService;
 import com.jcraft.jsch.*;
 
 import java.io.File;
@@ -89,13 +89,13 @@ public class RunAgentInstallService {
         }
 
         // 异步上传安装包
-        clusterNodeService.scpAgentFile(scpFileEngineNodeDto, "classpath:agent/zhiliuyun-agent.tar.gz",
-            sparkYunProperties.getTmpDir() + File.separator + "zhiliuyun-agent.tar.gz");
+        clusterNodeService.scpAgentFile(scpFileEngineNodeDto, "classpath:agent/zhishuyun-agent.tar.gz",
+            sparkYunProperties.getTmpDir() + File.separator + "zhishuyun-agent.tar.gz");
         log.debug("代理安装包上传中");
 
         // 同步监听进度
-        clusterNodeService.checkScpPercent(scpFileEngineNodeDto, "classpath:agent/zhiliuyun-agent.tar.gz",
-            sparkYunProperties.getTmpDir() + File.separator + "zhiliuyun-agent.tar.gz", engineNode);
+        clusterNodeService.checkScpPercent(scpFileEngineNodeDto, "classpath:agent/zhishuyun-agent.tar.gz",
+            sparkYunProperties.getTmpDir() + File.separator + "zhishuyun-agent.tar.gz", engineNode);
         log.debug("下载安装包成功");
 
         // 拷贝安装脚本

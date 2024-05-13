@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.utils.path;
+package com.isxcode.meta.common.utils.path;
 
 import java.io.File;
 import java.io.IOException;

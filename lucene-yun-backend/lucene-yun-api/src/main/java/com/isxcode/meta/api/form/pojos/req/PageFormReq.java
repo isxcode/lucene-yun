@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.form.pojos.req;
+package com.isxcode.meta.api.form.pojos.req;
 
-import com.isxcode.acorn.backend.api.base.pojos.BasePageRequest;
+import com.isxcode.meta.backend.api.base.pojos.BasePageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

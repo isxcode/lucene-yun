@@ -1,4 +1,4 @@
-package com.isxcode.acorn.backend.api.base.pojos;
+package com.isxcode.meta.backend.api.base.pojos;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotNull;

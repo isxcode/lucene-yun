@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.monitor.pojos.res;
+package com.isxcode.meta.api.monitor.pojos.res;
 
-import com.isxcode.acorn.api.monitor.pojos.dto.MonitorLineDto;
+import com.isxcode.meta.api.monitor.pojos.dto.MonitorLineDto;
 import lombok.Builder;
 import lombok.Data;
 

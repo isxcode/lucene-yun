@@ -98,7 +98,7 @@ spotless {
         target '*/**/*.java'
         targetExclude('*/build/**/*.java')
         targetExclude('lucene-yun-dist/**/*.java')
-        eclipse().configFile('/Users/ispong/isxcode/flink-yun/.spotless/eclipse-java-google-style.xml')
+        eclipse().configFile('/Users/ispong/isxcode/lucene-yun/.spotless/eclipse-java-google-style.xml')
         removeUnusedImports()
     }
 }
@@ -137,12 +137,12 @@ tasks.register('docker', Exec) {
   if (System.properties['os.name'].toString().contains('Mac OS X') || System.properties['os.name'].toString().contains('Linux')) {
     commandLine 'sh', '-c', '''
       docker buildx uninstallá
-      docker build -t isxcode/zhiliuyun:''' + version_number + ''' -f ./Dockerfile .
+      docker build -t isxcode/zhishuyun:''' + version_number + ''' -f ./Dockerfile .
      '''
   } else {
     commandLine 'cmd', '/c', '''
       docker buildx uninstall
-      docker build -t isxcode/zhiliuyun:''' + version_number + ''' -f ./Dockerfile .
+      docker build -t isxcode/zhishuyun:''' + version_number + ''' -f ./Dockerfile .
     '''
   }
 }
@@ -153,14 +153,14 @@ tasks.register('deploy', Exec) {
   if (System.properties['os.name'].toString().contains('Mac OS X') || System.properties['os.name'].toString().contains('Linux')) {
     commandLine 'sh', '-c', '''
       docker buildx install
-      docker buildx use zhiliuyun-builder
-      docker buildx build --platform linux/amd64,linux/arm64/v8 -t isxcode/zhiliuyun:''' + version_number + ''' -f ./Dockerfile . --push
+      docker buildx use zhishuyun-builder
+      docker buildx build --platform linux/amd64,linux/arm64/v8 -t isxcode/zhishuyun:''' + version_number + ''' -f ./Dockerfile . --push
     '''
   } else {
     commandLine 'cmd', '/c', '''
       docker buildx install
-      docker buildx use zhiliuyun-builder
-      docker buildx build --platform linux/amd64,linux/arm64/v8 -t isxcode/zhiliuyun:''' + version_number + ''' -f ./Dockerfile . --push
+      docker buildx use zhishuyun-builder
+      docker buildx build --platform linux/amd64,linux/arm64/v8 -t isxcode/zhishuyun:''' + version_number + ''' -f ./Dockerfile . --push
     '''
   }
 }

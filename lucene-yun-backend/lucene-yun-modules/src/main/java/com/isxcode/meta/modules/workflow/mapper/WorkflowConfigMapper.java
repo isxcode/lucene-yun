@@ -1,4 +1,4 @@
-package com.isxcode.acorn.modules.workflow.mapper;
+package com.isxcode.meta.modules.workflow.mapper;
 
 import org.mapstruct.Mapper;
 

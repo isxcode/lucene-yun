@@ -1,4 +1,4 @@
-package com.isxcode.acorn.modules.func.entity;
+package com.isxcode.meta.modules.func.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
@@ -14,7 +14,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-import static com.isxcode.acorn.common.config.CommonConfig.TENANT_ID;
+import static com.isxcode.meta.common.config.CommonConfig.TENANT_ID;
 
 @Data
 @Entity
@@ -27,7 +27,7 @@ public class FuncEntity {
 
     @Id
     @GeneratedValue(generator = "sy-id-generator")
-    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.acorn.config.GeneratedValueConfig")
+    @GenericGenerator(name = "sy-id-generator", strategy = "com.isxcode.meta.config.GeneratedValueConfig")
     private String id;
 
     private String fileId;

@@ -1,4 +1,4 @@
-package com.isxcode.acorn.common.locker;
+package com.isxcode.meta.common.locker;
 
 import javax.persistence.*;
 import lombok.AllArgsConstructor;

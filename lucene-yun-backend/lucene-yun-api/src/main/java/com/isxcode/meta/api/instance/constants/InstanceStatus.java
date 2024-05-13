@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.instance.constants;
+package com.isxcode.meta.api.instance.constants;
 
 public interface InstanceStatus {
 

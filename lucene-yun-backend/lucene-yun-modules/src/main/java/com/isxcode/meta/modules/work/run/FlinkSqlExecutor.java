@@ -1,41 +1,41 @@
-package com.isxcode.acorn.modules.work.run;
+package com.isxcode.meta.modules.work.run;
 
 import com.alibaba.fastjson.JSON;
-import com.isxcode.acorn.api.agent.constants.AgentApi;
-import com.isxcode.acorn.api.agent.pojos.req.AcornPluginReq;
-import com.isxcode.acorn.api.agent.pojos.req.GetJobInfoReq;
-import com.isxcode.acorn.api.agent.pojos.req.GetJobLogReq;
-import com.isxcode.acorn.api.agent.pojos.req.SubmitJobReq;
-import com.isxcode.acorn.api.agent.pojos.res.GetJobInfoRes;
-import com.isxcode.acorn.api.agent.pojos.res.GetJobLogRes;
-import com.isxcode.acorn.api.agent.pojos.res.SubmitJobRes;
-import com.isxcode.acorn.api.cluster.constants.ClusterNodeStatus;
-import com.isxcode.acorn.api.work.constants.WorkLog;
-import com.isxcode.acorn.api.work.exceptions.WorkRunException;
-import com.isxcode.acorn.api.work.pojos.res.RunWorkRes;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.backend.api.base.pojos.BaseResponse;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.locker.Locker;
-import com.isxcode.acorn.common.utils.AesUtils;
-import com.isxcode.acorn.common.utils.http.HttpUrlUtils;
-import com.isxcode.acorn.common.utils.http.HttpUtils;
-import com.isxcode.acorn.modules.cluster.entity.ClusterEntity;
-import com.isxcode.acorn.modules.cluster.entity.ClusterNodeEntity;
-import com.isxcode.acorn.modules.cluster.mapper.ClusterNodeMapper;
-import com.isxcode.acorn.modules.cluster.repository.ClusterNodeRepository;
-import com.isxcode.acorn.modules.cluster.repository.ClusterRepository;
-import com.isxcode.acorn.modules.datasource.service.DatasourceService;
-import com.isxcode.acorn.modules.file.repository.FileRepository;
-import com.isxcode.acorn.modules.func.mapper.FuncMapper;
-import com.isxcode.acorn.modules.func.repository.FuncRepository;
-import com.isxcode.acorn.modules.work.entity.WorkConfigEntity;
-import com.isxcode.acorn.modules.work.entity.WorkEntity;
-import com.isxcode.acorn.modules.work.entity.WorkInstanceEntity;
-import com.isxcode.acorn.modules.work.repository.WorkConfigRepository;
-import com.isxcode.acorn.modules.work.repository.WorkInstanceRepository;
-import com.isxcode.acorn.modules.work.repository.WorkRepository;
-import com.isxcode.acorn.modules.workflow.repository.WorkflowInstanceRepository;
+import com.isxcode.meta.api.agent.constants.AgentApi;
+import com.isxcode.meta.api.agent.pojos.req.AcornPluginReq;
+import com.isxcode.meta.api.agent.pojos.req.GetJobInfoReq;
+import com.isxcode.meta.api.agent.pojos.req.GetJobLogReq;
+import com.isxcode.meta.api.agent.pojos.req.SubmitJobReq;
+import com.isxcode.meta.api.agent.pojos.res.GetJobInfoRes;
+import com.isxcode.meta.api.agent.pojos.res.GetJobLogRes;
+import com.isxcode.meta.api.agent.pojos.res.SubmitJobRes;
+import com.isxcode.meta.api.cluster.constants.ClusterNodeStatus;
+import com.isxcode.meta.api.work.constants.WorkLog;
+import com.isxcode.meta.api.work.exceptions.WorkRunException;
+import com.isxcode.meta.api.work.pojos.res.RunWorkRes;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.pojos.BaseResponse;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.locker.Locker;
+import com.isxcode.meta.common.utils.AesUtils;
+import com.isxcode.meta.common.utils.http.HttpUrlUtils;
+import com.isxcode.meta.common.utils.http.HttpUtils;
+import com.isxcode.meta.modules.cluster.entity.ClusterEntity;
+import com.isxcode.meta.modules.cluster.entity.ClusterNodeEntity;
+import com.isxcode.meta.modules.cluster.mapper.ClusterNodeMapper;
+import com.isxcode.meta.modules.cluster.repository.ClusterNodeRepository;
+import com.isxcode.meta.modules.cluster.repository.ClusterRepository;
+import com.isxcode.meta.modules.datasource.service.DatasourceService;
+import com.isxcode.meta.modules.file.repository.FileRepository;
+import com.isxcode.meta.modules.func.mapper.FuncMapper;
+import com.isxcode.meta.modules.func.repository.FuncRepository;
+import com.isxcode.meta.modules.work.entity.WorkConfigEntity;
+import com.isxcode.meta.modules.work.entity.WorkEntity;
+import com.isxcode.meta.modules.work.entity.WorkInstanceEntity;
+import com.isxcode.meta.modules.work.repository.WorkConfigRepository;
+import com.isxcode.meta.modules.work.repository.WorkInstanceRepository;
+import com.isxcode.meta.modules.work.repository.WorkRepository;
+import com.isxcode.meta.modules.workflow.repository.WorkflowInstanceRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.http.HttpStatus;
@@ -147,9 +147,9 @@ public class FlinkSqlExecutor extends WorkExecutor {
         logBuilder.append(LocalDateTime.now()).append(WorkLog.SUCCESS_INFO).append("开始构建作业  \n");
 
         // 开始构造flinkSubmit
-        SubmitJobReq submitJobReq = SubmitJobReq.builder().entryClass("com.isxcode.acorn.plugin.sql.execute.Job")
+        SubmitJobReq submitJobReq = SubmitJobReq.builder().entryClass("com.isxcode.meta.plugin.sql.execute.Job")
             .agentHomePath(engineNode.getAgentHomePath()).appResource("flink-sql-execute-plugin.jar")
-            .appName("zhiliuyun-job").workInstanceId(workInstance.getId())
+            .appName("zhishuyun-job").workInstanceId(workInstance.getId())
             .acornPluginReq(AcornPluginReq.builder().flinkSql(workRunContext.getScript()).build())
             .agentType(calculateEngineEntityOptional.get().getClusterType()).build();
 

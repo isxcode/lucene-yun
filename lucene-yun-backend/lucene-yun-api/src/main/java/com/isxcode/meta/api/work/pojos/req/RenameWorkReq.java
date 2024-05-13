@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.work.pojos.req;
+package com.isxcode.meta.api.work.pojos.req;
 
 import javax.validation.constraints.NotEmpty;
 import lombok.Data;

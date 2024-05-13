@@ -1,10 +1,10 @@
-package com.isxcode.acorn.modules.work.service;
+package com.isxcode.meta.modules.work.service;
 
-import com.isxcode.acorn.api.datasource.pojos.dto.ColumnMetaDto;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.modules.datasource.entity.DatasourceEntity;
-import com.isxcode.acorn.modules.datasource.repository.DatasourceRepository;
-import com.isxcode.acorn.modules.datasource.service.DatasourceService;
+import com.isxcode.meta.api.datasource.pojos.dto.ColumnMetaDto;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.modules.datasource.entity.DatasourceEntity;
+import com.isxcode.meta.modules.datasource.repository.DatasourceRepository;
+import com.isxcode.meta.modules.datasource.service.DatasourceService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -16,7 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-import static com.isxcode.acorn.api.datasource.constants.DatasourceType.*;
+import static com.isxcode.meta.api.datasource.constants.DatasourceType.*;
 
 @Service
 @RequiredArgsConstructor

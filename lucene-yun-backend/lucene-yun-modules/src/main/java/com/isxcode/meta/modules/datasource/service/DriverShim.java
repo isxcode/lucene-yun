@@ -16,7 +16,7 @@
 /**
  * https://jeremylong.github.io/DependencyCheck/dependency-check-core/jacoco/org.owasp.dependencycheck.data.nvdcve/DriverShim.java.html.
  */
-package com.isxcode.acorn.modules.datasource.service;
+package com.isxcode.meta.modules.datasource.service;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

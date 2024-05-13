@@ -1,4 +1,4 @@
-package com.isxcode.acorn.api.license.pojos.req;
+package com.isxcode.meta.api.license.pojos.req;
 
 import java.time.LocalDateTime;
 import lombok.Builder;

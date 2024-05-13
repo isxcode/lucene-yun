@@ -1,4 +1,4 @@
-package com.isxcode.acorn.security.main;
+package com.isxcode.meta.security.main;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationProvider;

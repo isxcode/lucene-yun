@@ -1,19 +1,19 @@
-package com.isxcode.acorn.modules.work.run;
+package com.isxcode.meta.modules.work.run;
 
-import com.isxcode.acorn.api.cluster.pojos.dto.ScpFileEngineNodeDto;
-import com.isxcode.acorn.api.instance.constants.InstanceStatus;
-import com.isxcode.acorn.api.work.constants.WorkLog;
-import com.isxcode.acorn.api.work.exceptions.WorkRunException;
-import com.isxcode.acorn.common.utils.AesUtils;
-import com.isxcode.acorn.common.utils.ssh.SshUtils;
-import com.isxcode.acorn.modules.cluster.entity.ClusterEntity;
-import com.isxcode.acorn.modules.cluster.entity.ClusterNodeEntity;
-import com.isxcode.acorn.modules.cluster.mapper.ClusterNodeMapper;
-import com.isxcode.acorn.modules.cluster.repository.ClusterNodeRepository;
-import com.isxcode.acorn.modules.cluster.repository.ClusterRepository;
-import com.isxcode.acorn.modules.work.entity.WorkInstanceEntity;
-import com.isxcode.acorn.modules.work.repository.WorkInstanceRepository;
-import com.isxcode.acorn.modules.workflow.repository.WorkflowInstanceRepository;
+import com.isxcode.meta.api.cluster.pojos.dto.ScpFileEngineNodeDto;
+import com.isxcode.meta.api.instance.constants.InstanceStatus;
+import com.isxcode.meta.api.work.constants.WorkLog;
+import com.isxcode.meta.api.work.exceptions.WorkRunException;
+import com.isxcode.meta.common.utils.AesUtils;
+import com.isxcode.meta.common.utils.ssh.SshUtils;
+import com.isxcode.meta.modules.cluster.entity.ClusterEntity;
+import com.isxcode.meta.modules.cluster.entity.ClusterNodeEntity;
+import com.isxcode.meta.modules.cluster.mapper.ClusterNodeMapper;
+import com.isxcode.meta.modules.cluster.repository.ClusterNodeRepository;
+import com.isxcode.meta.modules.cluster.repository.ClusterRepository;
+import com.isxcode.meta.modules.work.entity.WorkInstanceEntity;
+import com.isxcode.meta.modules.work.repository.WorkInstanceRepository;
+import com.isxcode.meta.modules.workflow.repository.WorkflowInstanceRepository;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.SftpException;
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +25,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import static com.isxcode.acorn.common.utils.ssh.SshUtils.*;
+import static com.isxcode.meta.common.utils.ssh.SshUtils.*;
 
 @Service
 @Slf4j
@@ -103,11 +103,11 @@ public class BashExecutor extends WorkExecutor {
         try {
             // 上传脚本
             scpText(scpFileEngineNodeDto, workRunContext.getScript() + "\necho 'zhiqingyun_success'",
-                clusterNode.getAgentHomePath() + "/zhiliuyun-agent/works/" + workInstance.getId() + ".sh");
+                clusterNode.getAgentHomePath() + "/zhishuyun-agent/works/" + workInstance.getId() + ".sh");
 
             // 执行命令获取pid
-            String executeBashWorkCommand = "nohup sh " + clusterNode.getAgentHomePath() + "/zhiliuyun-agent/works/"
-                + workInstance.getId() + ".sh >> " + clusterNode.getAgentHomePath() + "/zhiliuyun-agent/works/"
+            String executeBashWorkCommand = "nohup sh " + clusterNode.getAgentHomePath() + "/zhishuyun-agent/works/"
+                + workInstance.getId() + ".sh >> " + clusterNode.getAgentHomePath() + "/zhishuyun-agent/works/"
                 + workInstance.getId() + ".log 2>&1 & echo $!";
             String pid = executeCommand(scpFileEngineNodeDto, executeBashWorkCommand, false).replace("\n", "");
 
@@ -154,7 +154,7 @@ public class BashExecutor extends WorkExecutor {
 
                 // 获取日志
                 String getLogCommand =
-                    "cat " + clusterNode.getAgentHomePath() + "/zhiliuyun-agent/works/" + workInstance.getId() + ".log";
+                    "cat " + clusterNode.getAgentHomePath() + "/zhishuyun-agent/works/" + workInstance.getId() + ".log";
                 String logCommand = "";
                 try {
                     logCommand = executeCommand(scpFileEngineNodeDto, getLogCommand, false);
@@ -170,9 +170,9 @@ public class BashExecutor extends WorkExecutor {
 
                 // 删除脚本和日志
                 try {
-                    String clearWorkRunFile = "rm -f " + clusterNode.getAgentHomePath() + "/zhiliuyun-agent/works/"
+                    String clearWorkRunFile = "rm -f " + clusterNode.getAgentHomePath() + "/zhishuyun-agent/works/"
                         + workInstance.getId() + ".log && " + "rm -f " + clusterNode.getAgentHomePath()
-                        + "/zhiliuyun-agent/works/" + workInstance.getId() + ".sh";
+                        + "/zhishuyun-agent/works/" + workInstance.getId() + ".sh";
                     SshUtils.executeCommand(scpFileEngineNodeDto, clearWorkRunFile, false);
                 } catch (JSchException | InterruptedException | IOException e) {
                     log.error("删除运行脚本失败");

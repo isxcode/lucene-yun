@@ -1,6 +1,6 @@
-package com.isxcode.acorn.api.real.pojos.req;
+package com.isxcode.meta.api.real.pojos.req;
 
-import com.isxcode.acorn.api.work.pojos.dto.SyncWorkConfig;
+import com.isxcode.meta.api.work.pojos.dto.SyncWorkConfig;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

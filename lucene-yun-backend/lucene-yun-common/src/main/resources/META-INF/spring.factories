@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.isxcode.acorn.common.config.AdviceAutoConfiguration
+    com.isxcode.meta.common.config.AdviceAutoConfiguration

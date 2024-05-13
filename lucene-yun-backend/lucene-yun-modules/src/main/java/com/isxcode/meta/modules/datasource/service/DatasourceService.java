@@ -1,17 +1,17 @@
-package com.isxcode.acorn.modules.datasource.service;
+package com.isxcode.meta.modules.datasource.service;
 
-import com.isxcode.acorn.api.datasource.constants.ColumnType;
-import com.isxcode.acorn.api.datasource.constants.DatasourceDriver;
-import com.isxcode.acorn.api.datasource.constants.DatasourceType;
-import com.isxcode.acorn.api.datasource.pojos.dto.KafkaConfig;
-import com.isxcode.acorn.api.datasource.pojos.dto.SecurityColumnDto;
-import com.isxcode.acorn.backend.api.base.exceptions.IsxAppException;
-import com.isxcode.acorn.backend.api.base.properties.IsxAppProperties;
-import com.isxcode.acorn.common.utils.AesUtils;
-import com.isxcode.acorn.common.utils.path.PathUtils;
-import com.isxcode.acorn.modules.datasource.entity.DatabaseDriverEntity;
-import com.isxcode.acorn.modules.datasource.entity.DatasourceEntity;
-import com.isxcode.acorn.modules.datasource.repository.DatasourceRepository;
+import com.isxcode.meta.api.datasource.constants.ColumnType;
+import com.isxcode.meta.api.datasource.constants.DatasourceDriver;
+import com.isxcode.meta.api.datasource.constants.DatasourceType;
+import com.isxcode.meta.api.datasource.pojos.dto.KafkaConfig;
+import com.isxcode.meta.api.datasource.pojos.dto.SecurityColumnDto;
+import com.isxcode.meta.backend.api.base.exceptions.IsxAppException;
+import com.isxcode.meta.backend.api.base.properties.IsxAppProperties;
+import com.isxcode.meta.common.utils.AesUtils;
+import com.isxcode.meta.common.utils.path.PathUtils;
+import com.isxcode.meta.modules.datasource.entity.DatabaseDriverEntity;
+import com.isxcode.meta.modules.datasource.entity.DatasourceEntity;
+import com.isxcode.meta.modules.datasource.repository.DatasourceRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.calcite.sql.parser.SqlParseException;
@@ -36,7 +36,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.isxcode.acorn.common.config.CommonConfig.JPA_TENANT_MODE;
+import static com.isxcode.meta.common.config.CommonConfig.JPA_TENANT_MODE;
 
 @Service
 @Slf4j

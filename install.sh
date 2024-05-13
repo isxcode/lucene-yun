@@ -47,7 +47,7 @@ fi
 
 # 下载mysql8驱动
 if [ ! -f "${CDC_DIR}"/flink-connector-jdbc-3.1.2-1.18.jar ]; then
-  curl -ssL https://isxcode.oss-cn-shanghai.aliyuncs.com/zhiliuyun/install/flink-connector-jdbc-3.1.2-1.18.jar -o ${CDC_DIR}/flink-connector-jdbc-3.1.2-1.18.jar
+  curl -ssL https://isxcode.oss-cn-shanghai.aliyuncs.com/zhishuyun/install/flink-connector-jdbc-3.1.2-1.18.jar -o ${CDC_DIR}/flink-connector-jdbc-3.1.2-1.18.jar
   echo "flink-connector-jdbc-3.1.2-1.18.jar下载成功"
 fi
 
@@ -60,7 +60,7 @@ fi
 
 # 下载mysql8驱动
 if [ ! -f "${JDBC_DIR}"/mysql-connector-j-8.1.0.jar ]; then
-  curl -ssL https://isxcode.oss-cn-shanghai.aliyuncs.com/zhiliuyun/install/mysql-connector-j-8.1.0.jar -o ${JDBC_DIR}/mysql-connector-j-8.1.0.jar
+  curl -ssL https://isxcode.oss-cn-shanghai.aliyuncs.com/zhishuyun/install/mysql-connector-j-8.1.0.jar -o ${JDBC_DIR}/mysql-connector-j-8.1.0.jar
   echo "mysql-connector-j-8.1.0.jar驱动下载成功"
 fi
 
